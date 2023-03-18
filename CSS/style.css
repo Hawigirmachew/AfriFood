@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-logo: lightgreen;
+  --secondary-color: white;
+  --font-family: "Lato", sans-serif;
+  /* --logo-color: rgb(255,163,163); */
+  --primary-color: rgb(0, 0, 0);
+}
+body {
+  background-color: rgb(223, 230, 232);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* nav section */
+.nav_wrapper {
+  padding: 0.8rem 1.2rem;
+  background-color: #b6b6b6;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo--name {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.logo {
+  max-width: 100px;
+  width: 1000%;
+  height: 77px;
+}
+#checkbox_toggle,
+.hamburger {
+  display: none;
+}
+.hamburger {
+  font-size: 24px;
+  user-select: none;
+}
+.nav_list--Menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #ffa3a3;
+  border-radius: 27px;
+}
+.nav_listItem + .nav_listItem {
+  margin-left: 50px;
+}
+.nav_listItem a {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+}
+.nav_listItem:hover {
+  background: #fff;
+  padding: 2px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* main design begins */
+.main {
+  background-color: white;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* banner design */
+.banner {
+  height: 80vh;
+  background-image: url(../Assets/top-view-food-frame-with-copy-space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner--qoute {
+  position: absolute;
+  left: 600px;
+  top: 250px;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: white;
+}
+/* about */
+.about {
+  padding: 0.9rem 0;
+}
+.about_wrapper {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subTitle {
+  font-family: var(--font-family);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0.7rem 0 1.3rem;
+  text-align: center;
+}
+.about_wrapper p {
+  line-height: 1.3rem;
+}
+/* food section starts */
+.food_wrapper {
+  padding: 20px;
+  margin: 0 auto;
+}
+.min_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 315px);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.food-img {
+  width: 100%;
+  height: 237px;
+}
+.min_wrapper-box {
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
+}
+.min_wrapper-box div {
+  padding: 1rem;
+}
+.readMore {
+  color: #ffa3a3;
+}
+/* food--slider */
+
+.foodSlider {
+  height: 35vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(242, 248, 248);
+}
+.foodSlider_wrapper {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px 30px;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  gap: 2rem;
+  background-color: #ffa3a3;
+  color: white;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.slide img {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 50px;
+}
+/* Swiper css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(10px);
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #ffa3a3;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #ffa3a3;
+}
+/* reviews */
+.reviews{
+  padding: 2rem 0;
+  /* background-color: #000; */
+}
+.reviews_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 315px);
+  gap: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.reviewCard {
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(242, 248, 248);
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
+  padding: 30px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.reviews_wrapper .swiper-button-next,
+.reviews_wrapper .swiper-button-prev {
+  position: absolute;
+}
+
+.reviews_wrapper .swiper-wrapper {
+  padding: 0 60px 20px;
+}
+.reviewCard_image {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  /* color: white; */
+}
+
+.reviewCard_image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 5px #ffa3a3;
+}
+.checked{
+  color: orange;
+}
+.reviewCard_des {
+  background-color: #ffa3a3;
+  border-radius: 5px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+}
+.reviewCard_des blockquote {
+  text-align: left;
+  position: relative;
+  padding: 45px 20px 40px 50px;
+}
+.reviewCard_des blockquote:before {
+  font-family: "FontAwesome";
+  content: "\201C";
+  position: absolute;
+  font-size: 3.5rem;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+/* footer */
+footer {
+  background-color: #b6b6b6;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 2rem 0rem;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 5px;
+}
+
+.subscribe input {
+  border: none;
+  margin-right: 0.2rem;
+  padding: 15px 40px;
+  border-radius: 50px;
+  max-width: 227px;
+  width: 100%;
+}
+.subscribe .btn {
+  padding: 15px 40px;
+  width: 100%;
+  font-size: 12px;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.footer__title {
+  font-size: 30px;
+  line-height: 40px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.socialIcons {
+  max-width: 200px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer--list {
+  padding: 0;
+}
+.footer--listItems + .footer--listItems {
+  margin-top: 8px;
+}
+.footer--listItems a {
+  color: #000;
+}
+.footer--listItems a:hover {
+  color: white;
+}
+
+.copy {
+  border-top: 1px solid #000;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  line-height: 24px;
+}

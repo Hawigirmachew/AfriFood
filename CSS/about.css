@@ -1,0 +1,50 @@
+.about_afrifood {
+    margin: 0 auto;
+    width: 100%;
+    padding:20px 0 ;
+  }
+  .about_afrifood-wrapper {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .about_afrifood-wrapper img {
+    max-width: 400px;
+    width: 100%;
+    height: 500px;
+  }
+  .about_afrifood-wrapper div {
+    flex-basis: 55%;
+    /* align-self: center; */
+  }
+  .about_afrifood-wrapper h1{
+    text-transform: uppercase;
+  }
+  .about_afrifood-wrapper p{
+    padding-right: 100px;
+    text-align: justify;
+  }
+  /* about--page */
+  @media screen and (max-width:756px){
+    .about_afrifood-wrapper{
+      gap: 1rem;
+    }
+      .about_afrifood-wrapper img {
+        max-width: 250px;
+        /* width: 100%; */
+        height: 300px;
+        /* transform: rotate(360deg); */
+      }
+  }
+  @media screen and (max-width:590px){
+    .about_afrifood-wrapper{
+        flex-direction: column;
+      }
+      .about_afrifood-wrapper img{
+        align-self: center;
+        max-width: 600px;
+      }
+     
+  }
+  
