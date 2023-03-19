@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/media.css" />
+    <!-- Font Awesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="./JS/swiper-bundle.min.js" defer></script>
+    <!-- JS -->
+    <script src="./JS/index.js" defer></script>
+    <title>AFRIFOOD</title>
+  </head>
+
+  <body>
+    <nav class="nav_bar">
+      <div class="nav_wrapper">
+        <div>
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <span class="logo--name">AFRIFOOD</span>
+        </div>
+        <ul class="nav_list">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="nav_list--Menu">
+            <li class="nav_listItem"><a href="#">Home</a></li>
+            <li class="nav_listItem menu--item">
+              <a href="#countries-food">Countries Food</a>
+              <div class="dropdown-options">
+                <a href="./pages/nigeria.html">Nigeria</a>
+                <a href="./pages/ethiopia.html">Ethiopia</a>
+                <a href="./pages/southafrican.html">South Africa</a>
+                <a href="./pages/egypt.html">Egypt</a>
+                <a href="./pages/drcongo.html">Dr.Congo</a>
+
+                <!-- <a href="#">Logout</a> -->
+              </div>
+            </li>
+            <li class="nav_listItem"><a href="./pages/about.html">About</a></li>
+            <li class="nav_listItem">
+              <a href="./pages/contact.html">Contact</a>
+            </li>
+            <!-- <li class="nav_listItem"><a href="./login.html">Login</a></li> -->
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="banner">
+        <h1 id="banner--qoute" class="banner--qoute"></h1>
+      </section>
+      <section class="foodSlider">
+        <div class="foodSlider_wrapper foodSwiper">
+          <div class="slider--content swiper-wrapper">
+            <div class="slide swiper-slide">
+              <img src="./Assets/food/Egypt/tarb_Egypt.jpg" alt="" srcset="" />
+              <div>
+                <span>food</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam eius tempore architecto!
+                </p>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <img
+                src="./Assets/food/Egypt/koshary_egypt.jpg"
+                alt=""
+                srcset=""
+              />
+              <div>
+                <span>food</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam eius tempore architecto!
+                </p>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <img
+                src="./Assets/food/Egypt/koshary_egypt.jpg"
+                alt=""
+                srcset=""
+              />
+              <div>
+                <span>food</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam eius tempore architecto!
+                </p>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <img
+                src="./Assets/food/Egypt/koshary_egypt.jpg"
+                alt=""
+                srcset=""
+              />
+              <div>
+                <span>food</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam eius tempore architecto!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next nav-btn"></div>
+          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about_wrapper">
+          <h2 class="subTitle">We love to introduce African Food</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit lacinia,
+            maecenas interdum sociis inceptos phasellus pretium iaculis dictumst
+            congue, nisl habitasse cum odio egestas sociosqu nulla. Vivamus dis
+            mauris suspendisse ullamcorper nibh pellentesque scelerisque
+            torquent, turpis quam pharetra ligula accumsan aenean.
+          </p>
+          <a href="" class="btn btn-login">Read more African Fo0od</a>
+        </div>
+      </section>
+      <section class="food" id="countries-food">
+        <div class="food_wrapper">
+          <h2 class="subTitle">Food</h2>
+          <div class="min_wrapper">
+            <!-- Dr. Congo food -->
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/Dr. Congo/Kwanga-congo.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Kwanga</h3>
+                <p class="food-description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/Dr. Congo/chicken-moambe-congo.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Caakiri</h3>
+                <p class="food-description">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <!-- Nigerian food -->
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/Nigeria/Jollof-Rice_nigeria.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Jollof Rice</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/Nigeria/Suya_nigeria.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Suya</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <!-- Ethiopian food -->
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Ethiopia/Beyayenetu.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Beyayenetu</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/Ethiopia/doro-wet-ethiopia.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Doro Wet</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <!-- Egyptian food -->
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/Egypt/tarb_Egypt.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Tarb</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/Egypt/molokhiya_egypt.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Molokhiya</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <!-- South African food -->
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/SA/bobotie_SA.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Bobotie</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="./Assets/food/SA/vetkoek_SA.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Vetkoek</h3>
+                <p class="food-name">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
+                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
+                  proin ultricies tristique sed.
+                </p>
+                <a href="" class="readMore">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="subTitle">Reviews</h2>
+        <div class="reviews_wrapper testimonySwiper">
+          <div class="swiper-wrapper">
+            <div class="reviewCard swiper-slide">
+              <div class="reviewCard_image">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg"
+                  alt="flower"
+                />
+                <span>Hawi</span>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="reviewCard_des">
+                <blockquote>
+                  Lorem ipsum dolor sit amet consectetur adipiscing, elit
+                  hendrerit torquent lectus fringilla auctor taciti,
+                </blockquote>
+              </div>
+            </div>
+            <div class="reviewCard swiper-slide">
+              <div class="reviewCard_image">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg"
+                  alt="flower"
+                />
+                <span>Hawi</span>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="reviewCard_des">
+                <blockquote>
+                  Lorem ipsum dolor sit amet consectetur adipiscing, elit
+                  hendrerit torquent lectus fringilla auctor taciti,
+                </blockquote>
+              </div>
+            </div>
+            <div class="reviewCard swiper-slide">
+              <div class="reviewCard_image">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg"
+                  alt="flower"
+                />
+                <span>Hawi</span>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="reviewCard_des">
+                <blockquote>
+                  Lorem ipsum dolor sit amet consectetur adipiscing, elit
+                  hendrerit torquent lectus fringilla auctor taciti,
+                </blockquote>
+              </div>
+            </div>
+            <div class="reviewCard swiper-slide">
+              <div class="reviewCard_image">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg"
+                  alt="flower"
+                />
+                <span>Hawi</span>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="reviewCard_des">
+                <blockquote>
+                  Lorem ipsum dolor sit amet consectetur adipiscing, elit
+                  hendrerit torquent lectus fringilla auctor taciti,
+                </blockquote>
+              </div>
+            </div>
+            <div class="reviewCard swiper-slide">
+              <div class="reviewCard_image">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg"
+                  alt="flower"
+                />
+                <span>Hawi</span>
+                <div>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+              <div class="reviewCard_des">
+                <blockquote>
+                  Lorem ipsum dolor sit amet consectetur adipiscing, elit
+                  hendrerit torquent lectus fringilla auctor taciti,
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next nav-btn"></div>
+          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer__logo">
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <p>Come and get African Foods</p>
+          <form class="subscribe">
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="Enter your eamil"
+            />
+
+            <button type="submit" class="btn btn-login">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="locations">
+          <h3 class="footer--title">Location</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="./pages/nigeria.html" class="countries">Nigeria</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="./pages/ethiopia.html" class="countries">Ethiopia</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="./pages/southafrican.html" class="countries"
+                >South Africa</a
+              >
+            </li>
+            <li class="footer--listItems">
+              <a href="./pages/egypt.html" class="countries">Egypt</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="./pages/drcongo.html" class="countries">Dr. Congo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quickLinks">
+          <h3 class="footer--title">Links</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="#" class="quickLinks--link">Home</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="./about.html" class="quickLinks--link">About</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="./food.html" class="quickLinks--link">Menu</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="./contact.html" class="quickLinks--link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3 class="footer--title">Contact Us</h3>
+          <ul class="socialIcons">
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/instagram logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/facebook logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/twitter logo.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="campany">
+          <h3 class="footer--title">Campany</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="" class="tos">Terms and Conditions</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="" class="tos">Privacy Policy</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="" class="tos">Cookie Policy</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+
+      <div class="copy">
+        <p>
+          Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

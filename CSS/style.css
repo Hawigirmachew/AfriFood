@@ -8,14 +8,27 @@
   box-sizing: border-box;
 }
 :root {
-  --color-logo: lightgreen;
-  --secondary-color: white;
+  /* colors */
+  --body-color: #dfe6e8;
+  --color-pinkswan: #b6b6b6;
+  --deeplightblue-color: #f2f8f8;
+  --lightpink-color: #ffa3a3;
+  --orange-color: #ffa500;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  /* font-families */
   --font-family: "Lato", sans-serif;
-  /* --logo-color: rgb(255,163,163); */
-  --primary-color: rgb(0, 0, 0);
+  /* font-size */
+  --xxlfont-size: 4rem;
+  --xlfont-size: 3.5rem;
+  --lgfont-size: 2.5rem;
+  --mdfont-size: 2rem;
+  --smfont-size: 1.5rem;
+  --xsfont-size: 1.25rem;
+  --xxsfont-size: 1.1rem;
 }
 body {
-  background-color: rgb(223, 230, 232);
+  background-color: var(--body-color);
 }
 li {
   list-style: none;
@@ -23,10 +36,37 @@ li {
 a {
   text-decoration: none;
 }
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--deeplightblue-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-pinkswan);
+}
+/* common for all */
+.btn {
+  border: none;
+  padding: 20px 70px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.btn-login {
+  background: #8c99dd;
+}
+.btn-signup {
+  background: #b7b7b7;
+}
 /* nav section */
 .nav_wrapper {
   padding: 0.8rem 1.2rem;
-  background-color: #b6b6b6;
+  background-color: var(--color-pinkswan);
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
@@ -47,14 +87,14 @@ a {
   display: none;
 }
 .hamburger {
-  font-size: 24px;
+  font-size: 1.5rem;
   user-select: none;
 }
 .nav_list--Menu {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #ffa3a3;
+  background: var(--lightpink-color);
   border-radius: 27px;
 }
 .nav_listItem + .nav_listItem {
@@ -74,10 +114,24 @@ a {
   border-radius: 10px;
   cursor: pointer;
 }
-
+.menu--item {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-options {
+  display: none;
+  position: absolute;
+  /* overflow: auto; */
+}
+.dropdown-options a {
+  display: block;
+}
+.menu--item:hover .dropdown-options {
+  display: block;
+}
 /* main design begins */
 .main {
-  background-color: white;
+  background-color: var(--white-color);
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
@@ -85,7 +139,7 @@ a {
 /* banner design */
 .banner {
   height: 80vh;
-  background-image: url(../Assets/top-view-food-frame-with-copy-space.jpg);
+  background-image: url("./Assets/top-view-food-frame-with-copy-space.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -94,9 +148,9 @@ a {
   position: absolute;
   left: 600px;
   top: 250px;
-  font-size: 4rem;
-  line-height: 4rem;
-  color: white;
+  font-size: var(--xxlfont-size);
+  line-height: var(--xxlfont-size);
+  color: var(--white-color);
 }
 /* about */
 .about {
@@ -111,8 +165,8 @@ a {
 }
 .subTitle {
   font-family: var(--font-family);
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: var(--xlfont-size);
+  line-height: var(--xlfont-size);
   margin: 0.7rem 0 1.3rem;
   text-align: center;
 }
@@ -142,18 +196,15 @@ a {
   padding: 1rem;
 }
 .readMore {
-  color: #ffa3a3;
+  color: var(--lightpink-color);
 }
 /* food--slider */
 
 .foodSlider {
-  height: 35vh;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(242, 248, 248);
+  background-color: var(--deeplightblue-color);
 }
 .foodSlider_wrapper {
   position: relative;
@@ -162,7 +213,6 @@ a {
   padding: 40px 30px;
   overflow: hidden;
 }
-
 .slide {
   display: flex;
   align-items: center;
@@ -171,8 +221,8 @@ a {
   height: 100%;
   padding: 30px;
   gap: 2rem;
-  background-color: #ffa3a3;
-  color: white;
+  background-color: var(--lightpink-color);
+  color: var(--white-color);
   border-radius: 50px;
   overflow: hidden;
 }
@@ -195,17 +245,17 @@ a {
 }
 .nav-btn::after,
 .nav-btn::before {
-  font-size: 20px;
-  color: #ffa3a3;
+  font-size: var(--xsfont-size);
+  color: var(--lightpink-color);
 }
 .swiper-pagination-bullet {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .swiper-pagination-bullet-active {
-  background-color: #ffa3a3;
+  background-color: var(--lightpink-color);
 }
 /* reviews */
-.reviews{
+.reviews {
   padding: 2rem 0;
   /* background-color: #000; */
 }
@@ -251,13 +301,13 @@ a {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: solid 5px #ffa3a3;
+  border: solid 5px var(--lightpink-color);
 }
-.checked{
-  color: orange;
+.checked {
+  color: var(--orange-color);
 }
 .reviewCard_des {
-  background-color: #ffa3a3;
+  background-color: var(--lightpink-color);
   border-radius: 5px;
   box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
 }
@@ -270,7 +320,7 @@ a {
   font-family: "FontAwesome";
   content: "\201C";
   position: absolute;
-  font-size: 3.5rem;
+  font-size: var(--xlfont-size);
   opacity: 0.25;
   font-style: normal;
   top: 0px;
@@ -278,7 +328,7 @@ a {
 }
 /* footer */
 footer {
-  background-color: #b6b6b6;
+  background-color: var(--color-pinkswan);
   max-width: 1220px;
   width: 100%;
   margin: 0 auto;
@@ -315,27 +365,19 @@ footer {
 .subscribe .btn {
   padding: 15px 40px;
   width: 100%;
-  font-size: 12px;
+  font-size: var(--xxsfont-size);
 }
 .subscribe input:focus {
   outline: none;
 }
-.footer__title {
-  font-size: 30px;
+.footer--title {
+  font-size: var(--mdfont-size);
   line-height: 40px;
 }
-.social {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
-}
+
 .socialIcons {
-  max-width: 200px;
-  width: 100%;
-  margin-top: 10px;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
 }
 .footer--list {
   padding: 0;
@@ -344,17 +386,18 @@ footer {
   margin-top: 8px;
 }
 .footer--listItems a {
-  color: #000;
+  color: var(--black-color);
 }
 .footer--listItems a:hover {
-  color: white;
+  color: var(--white-color);
 }
-
 .copy {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--black-color);
   padding: 0.5rem 1rem;
   text-align: center;
   font-family: var(--font-family);
-  font-size: 1.2rem;
+  font-size: var(--xsfont-size);
   line-height: 24px;
 }
+
+
