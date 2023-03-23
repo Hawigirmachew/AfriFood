@@ -23,6 +23,16 @@
   flex-direction: column;
   gap: 1rem;
 }
+.input-row{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.error{
+  font-size:var(--xxsfont-size) ;
+  color: var(--warning-color);
+  display: none;
+}
 .conatctForm-input,
 .conatctForm-textarea {
   border: none;

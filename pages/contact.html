@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/style.css" />
-   
+
     <link rel="stylesheet" href="../CSS/contact.css" />
     <link rel="stylesheet" href="../CSS/media.css" />
+    <!-- JS -->
+    <script src="../JS/contact.js" defer></script>
     <title>Contact Us</title>
   </head>
   <body>
@@ -50,35 +52,51 @@
             <form
               action="https://formsubmit.co/hawigirmachew@gmail.com"
               method="POST"
+              id="contact-form"
+              
               class="contact-form"
             >
+              <div class="input-row">
+                <input
+                  type="text"
+                  id="name"
+                  class="conatctForm-input"
+                  placeholder="Name"
+                  required
+                 
+                />
+                <span class="error">Please enter your name</span>
+              </div>
+              <div class="input-row">
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="Email"
+                  class="conatctForm-input"
+                />
+                <span class="error">Please enter your email</span>
+              </div>
               <input
                 type="text"
-                class="conatctForm-input"
-                placeholder="Name"
+                id="subject"
                 required
-              />
-              <input
-                type="emai
-                        "
-                required
-                placeholder="Email"
-                class="conatctForm-input"
-              />
-              <input
-                type="text"
                 class="conatctForm-input"
                 placeholder="Subject"
               />
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                class="conatctForm-textarea"
-                required
-              ></textarea>
+              <span class="error">Please enter your subject</span>
+              <div class="input-row">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                  class="conatctForm-textarea"
+                  required
+                ></textarea>
+                <span class="error">Please Enter your message</span>
+              </div>
               <input
                 type="hidden"
                 name="_next"
@@ -86,7 +104,9 @@
               />
               <input type="hidden" name="_captcha" value="false" />
 
-              <button type="submit" class="btn btn-signup">Send Message</button>
+              <button type="submit" id="submit" class="btn btn-signup">
+                Send Message
+              </button>
             </form>
           </div>
           <div class="socoilMedia--contact">

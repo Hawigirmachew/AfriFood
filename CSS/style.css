@@ -16,6 +16,7 @@
   --orange-color: #ffa500;
   --white-color: #ffffff;
   --black-color: #000000;
+  --warning-color:#ff0000;
   /* font-families */
   --font-family: "Lato", sans-serif;
   /* font-size */
@@ -48,7 +49,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-pinkswan);
+  background: var(--black-color);
 }
 /* common for all */
 .btn {
@@ -119,12 +120,18 @@ a {
   position: relative;
 }
 .dropdown-options {
+  padding: 5px 10px;
   display: none;
   position: absolute;
+  background-color: var(--lightpink-color);
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
+  color:var(--white-color);
+  z-index: 1;
   /* overflow: auto; */
 }
 .dropdown-options a {
   display: block;
+
 }
 .menu--item:hover .dropdown-options {
   display: block;
@@ -138,8 +145,9 @@ a {
 }
 /* banner design */
 .banner {
+  
   height: 80vh;
-  background-image: url("./Assets/top-view-food-frame-with-copy-space.jpg");
+  background-image: url("https://res.cloudinary.com/dvfszvcxa/image/upload/q_70/v1679294104/top-view-food-frame-with-copy-space_n5lucc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -207,7 +215,9 @@ a {
   background-color: var(--deeplightblue-color);
 }
 .foodSlider_wrapper {
+
   position: relative;
+  display: flex;
   max-width: 800px;
   width: 100%;
   padding: 40px 30px;

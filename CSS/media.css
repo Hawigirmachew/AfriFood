@@ -55,6 +55,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .btn{
+    padding: 10px 30px;
+  }
   .nav_wrapper {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -88,6 +91,14 @@
   }
   .hamburger {
     display: block;
+  }
+  .dropdown-options {
+    width:70%;
+   left: 140px;
+   /* font-size: 0.2rem; */
+  }
+  .dropdown-options a{
+    font-size: 0.8rem;
   }
   /* banner--section */
   .banner--qoute {
@@ -136,6 +147,9 @@
   }
 }
 @media screen and (max-width: 576px) {
+   .btn{
+    padding: 10px;
+   }
   /* banner--section */
   .banner {
     height: 60vh;
