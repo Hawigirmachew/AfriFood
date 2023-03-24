@@ -30,7 +30,7 @@ function nextSlide(){
     current = -1
   }
   reset()
-  foodSlide[current + 1].style.display = 'block'
+  foodSlide[current + 1].style.display = 'flex'
   current++;
 }
 
@@ -42,7 +42,7 @@ nxtBtn.addEventListener('click', function(){
 })
 function prevSlide(){
   reset()
-  foodSlide[current - 1].style.display = 'block'
+  foodSlide[current - 1].style.display = 'flex'
   current--;
 }
 
@@ -57,8 +57,8 @@ prevBtn.addEventListener('click', function(){
 
 function init(){
   reset()
-  setInterval(nextSlide, 3000)
-  foodSlide[0].style.display = 'block'
+  // setInterval(nextSlide, 3000)
+  foodSlide[0].style.display = 'flex'
   
 }
 

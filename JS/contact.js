@@ -30,8 +30,29 @@ function user(e){
     console.log(userName.nextElementSibling);
     if (userName.value === " ") {
       console.log('enter user name')
-      // userName.nextElementSibling.style.display = "block";
-      // return false;
+      userName.nextElementSibling.style.display = "block";
+      return false;
+    } else {
+      userName.nextElementSibling.style.display = "none";
+    }
+    if (email.value === " ") {
+      console.log('enter user name')
+      userName.nextElementSibling.style.display = "block";
+      return false;
+    } else {
+      userName.nextElementSibling.style.display = "none";
+    }
+    if (subject.value === " ") {
+      console.log('enter user name')
+      userName.nextElementSibling.style.display = "block";
+      return false;
+    } else {
+      userName.nextElementSibling.style.display = "none";
+    }
+    if (message.value === " ") {
+      console.log('enter user name')
+      userName.nextElementSibling.style.display = "block";
+      return false;
     } else {
       userName.nextElementSibling.style.display = "none";
     }

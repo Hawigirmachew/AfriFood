@@ -1,134 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/media.css" />
+    <script src="../JS/main.js" defer></script>
     <title>Nigerian Food</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="nav_bar">
-        <div class="nav_wrapper">
-          <div>
-            <img src="../Assets/logo.jpg" alt="" class="logo" />
-            <span class="logo--name">AFRIFOOD</span>
+      <div class="nav_wrapper">
+        <div>
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <span class="logo--name">AFRIFOOD</span>
+        </div>
+        <ul class="nav_list">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="nav_list--Menu">
+            <li class="nav_listItem"><a href="../index.html">Home</a></li>
+            <li class="nav_listItem menu--item">
+              <a href="#nigerian-food">Countries Food</a>
+              <div class="dropdown-options">
+                <a href="#">Nigeria</a>
+                <a href="../pages/ethiopia.html">Ethiopia</a>
+                <a href="../pages/southafrican.html">South Africa</a>
+                <a href="../pages/egypt.html">Egypt</a>
+                <a href="../pages/drcongo.html">Dr.Congo</a>
+
+                <!-- <a href="#">Logout</a> -->
+              </div>
+            </li>
+            <li class="nav_listItem">
+              <a href="../pages/about.html">About</a>
+            </li>
+            <li class="nav_listItem">
+              <a href="../pages/contact.html">Contact</a>
+            </li>
+            <!-- <li class="nav_listItem"><a href="./login.html">Login</a></li> -->
           </div>
-          <ul class="nav_list">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="nav_list--Menu">
-              <li class="nav_listItem"><a href="#">Home</a></li>
-              <li class="nav_listItem menu--item">
-                <a href="#countries-food">Countries Food</a>
-                <div class="dropdown-options">
-                  <a href="#">Nigeria</a>
-                  <a href="#">Ethiopia</a>
-                  <a href="#">South Africa</a>
-                  <a href="#">Egypt</a>
-                  <a href="#">Dr.Congo</a>
-                  
-                  <!-- <a href="#">Logout</a> -->
-                </div>
-              </li>
-              <li class="nav_listItem"><a href="./about.html">About</a></li>
-              <li class="nav_listItem"><a href="./contact.html">Contact</a></li>
-              <!-- <li class="nav_listItem"><a href="./login.html">Login</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="hero_section">
+        <h1 class="hero_title">Nigeria Recipies</h1>
+      </section>
+      <section class="food" id="nigerian-food">
+        <div class="food_wrapper">
+          <h2 class="subTitle">Cultural Recipies</h2>
+          <div class="min_wrapper">
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/amalaEwedoSoup_nigeria.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">AmalaEwedoSoup</h3>
+                <p class="food-description">
+                  Yam flour is cooked until it forms a smooth, fluffy side dish
+                  that can be served with a variety of soups, such as the
+                  flavorful Ewudu.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
             </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Fried-Ripe-Plantains-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Fried Ripe</h3>
+                <p class="food-description">
+                  Fried plantains are a big part of Caribbean, Asian and African
+                  cuisine. In Yoruba, it’s called Dodo and it’s served with
+                  everything from Jollof rice to savory stews.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Fufu-1-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Jollof Rice</h3>
+                <p class="food-name">
+                  Fufu can be made with yam, cassava or other ground
+                  provisions. Served it with soup, stew, or sauce. So satisfying
+                  and delicious!
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Iyan-Pounded-Yam-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Iyan Pounded</h3>
+                <p class="food-name">
+                  If you like mashed potatoes, you’re sure to enjoy pounded yam.
+                  This tasty staple is super filling and can be served with
+                  traditional African soups and stews.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore">read more</a>
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Garri-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Garri</h3>
+                <p class="food-name">
+                  Looking for something new and wholesome to add to your
+                  breakfast menu? Garri is a Nigerian cereal made with cassava
+                  and milk. Toppings like nuts and berries make this dish even
+                  tastier.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Grilled-Plantain-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Boli</h3>
+                <p class="food-name">
+                  This popular Nigerian street food features sweet ripe
+                  plantains coated in olive oil, delicately seasoned and grilled
+                  to perfection.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Eba-Cassava-Meal-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Eba Cassava</h3>
+                <p class="food-name">
+                  Eba food is a traditional staple made from cassava. It can be
+                  paired with other tasty Nigerian dishes such as Okro soup or
+                  meat stew.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Nkwobi-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Nkwobi</h3>
+                <p class="food-name">
+                  In eastern Nigeria, Nkwobi is served in popular restaurants
+                  and is considered a delicacy. This spicy dish is made with cow
+                  foot, which is seasoned and pressure cooked until tender.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Chicken-Empanadas-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Bobotie</h3>
+                <p class="food-name">
+                  If you’re a fan of Mexican empanadas, expand your palate by
+                  trying the Nigerian meat pie. Ground beef is seasoned and
+                  cooked with diced potatoes and carrots, then stuffed inside a
+                  flaky, savory pastry.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Nigerian-Buns-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Nigerian Buns</h3>
+                <p class="food-name">
+                  These sweet buns are beyond tasty and are ready in only 15
+                  minutes. You’re sure to love the sweet, crunchy texture and
+                  rich vanilla flavor.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="min_wrapper">
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Chicken-Pepper-Soup-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Chicken Pepper Soup</h3>
+                <p class="food-description">
+                  For chilly winter nights, you’ll hardly find a more comforting
+                  dinner option. Nigerian chicken pepper soup is meaty,
+                  flavorful, and totally satisfying.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Beef-Stew-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Beef Stew</h3>
+                <p class="food-description">
+                  When you’re craving something meaty and satisfying, look no
+                  further than this spicy Nigerian stew. Habanero and bell
+                  peppers are simmered in olive oil, along with Roma tomatoes
+                  and onions. Next, add your beef and cook until tender.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Efo-Riro-Spinach-Stew-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Efo Riro</h3>
+                <p class="food-name">
+                  This Nigerian spinach stew is like nothing you’ve ever tried
+                  before. With Efo Riro, you’ll get a healthy dose of leafy
+                  greens plus lots of meaty flavors.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Ofada-Stew-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Ofada Stew</h3>
+                <p class="food-name">
+                  In many Yoruba households, Ofada stew is a delicacy saved for
+                  special occasions. The delectable stew is made with goat meat,
+                  smoked shrimp and lots of seasonings.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Afang-Soup-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Afang Soup</h3>
+                <p class="food-name">
+                  The afang is a dark green leafy vegetable that’s quite similar
+                  to spinach. In this quintessential Nigerian dish, afang is
+                  transformed into a rich soup thanks to bone broth, palm oil,
+                  meats and seafood.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Peanut-Soup-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Peanout Soup</h3>
+                <p class="food-name">
+                  This nourishing soup can also be found in East Asia and Virginia in the United States. A staple in many West African households, this flavorful soup is great with meat, seafood or veggies. 
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Nigeria/Puff-Puff-Fried-Dough-683x1024.jpg"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Puff Puff</h3>
+                <p class="food-name">
+                  Puff puff is a simple yet satisfying Nigerian pastry that will remind you of donut holes. Enjoy these addictive balls as a snack or appetizer.
+                </p>
+                <a href = "https://izzycooking.com/nigerian-food/" class="readMore" target="_blank">read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="navigate_wrapper">
+            <a href="#" class="navigate next">1</a>
+            <a href="#" class="navigate prev">2</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer__logo">
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <p>Come and get African Foods</p>
+          <form class="subscribe">
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="Enter your eamil"
+            />
+
+            <button type="submit" class="btn btn-login">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="locations">
+          <h3 class="footer--title">Location</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="#" class="countries">Nigeria</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/ethiopia.html" class="countries">Ethiopia</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/southafrican.html" class="countries"
+                >South Africa</a
+              >
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/egypt.html" class="countries">Egypt</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/drcongo.html" class="countries">Dr. Congo</a>
+            </li>
           </ul>
         </div>
-      </nav>
-      <footer>
-        <div class="footer_wrapper">
-          <div class="footer__logo">
-            <img src="../Assets/logo.jpg" alt="" class="logo" />
-            <p>Come and get African Foods</p>
-            <form class="subscribe">
-              <input
-                type="email"
-                required
-                id="email"
-                placeholder="Enter your eamil"
-              />
-  
-              <button type="submit" class="btn btn-login">Subscribe</button>
-            </form>
-          </div>
-  
-          <div class="locations">
-            <h3 class="footer--title">Location</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="" class="countries">Nigeria</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="" class="countries">Ethiopia</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="" class="countries">South Africa</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="" class="countries">Egypt</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="" class="countries">Dr. Congo</a>
-              </li>
-            </ul>
-          </div>
-          <div class="quickLinks">
-            <h3 class="footer--title">Links</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="#" class="quickLinks--link">Home</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="./about.html" class="quickLinks--link">About</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="./food.html" class="quickLinks--link">Menu</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="./contact.html" class="quickLinks--link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="social">
-            <h3 class="footer--title">Contact Us</h3>
-            <ul class="socialIcons">
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/instagram logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/facebook logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/twitter logo.png"
-                    alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
-         
+        <div class="quickLinks">
+          <h3 class="footer--title">Links</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="../index.html" class="quickLinks--link">Home</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/about.html" class="quickLinks--link">About</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../index.html#countries-food" class="quickLinks--link"
+                >Menu</a
+              >
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/contact.html" class="quickLinks--link"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
-        
-        <div class="copy">
-          <p>
-            Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
-            Rights Reserved.
-          </p>
+        <div class="social">
+          <h3 class="footer--title">Contact Us</h3>
+          <ul class="socialIcons">
+            <li class="socialIcons__items">
+              <a href = "" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/instagram logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href = "" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/facebook logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/twitter logo.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
-      </footer>
-</body>
+      </div>
+
+      <div class="copy">
+        <p>
+          Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
