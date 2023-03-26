@@ -14,16 +14,12 @@
   width: 100%;
   height: 500px;
 }
-.about_afrifood-wrapper h1 {
-  font-size: 4rem;
-}
+
 .about_afrifood-wrapper div {
   flex-basis: 55%;
   /* align-self: center; */
 }
-.about_afrifood-wrapper h1 {
-  text-transform: uppercase;
-}
+
 .about_afrifood-wrapper p {
   padding-right: 100px;
   text-align: justify;
@@ -31,7 +27,7 @@
 
 /* about--page */
 @media screen and (max-width:1024px) {
-  .about_afrifood-wrapper h1 {
+  .about_afrifood-wrapper h2 {
     font-size: var(--lgfont-size);
   }
   .about_afrifood-wrapper p {
@@ -49,7 +45,7 @@
     max-width: 270px;
     height: 420px;
   }
-  .about_afrifood-wrapper h1 {
+  .about_afrifood-wrapper h2 {
     font-size: var(--smfont-size);
   }
   .about_afrifood-wrapper p {
