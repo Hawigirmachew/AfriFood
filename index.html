@@ -12,8 +12,9 @@
     />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./CSS/nav.css">
     <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="./CSS/media.css" />
+    <link rel="stylesheet" href="./CSS/footer.css">
     <!-- Font Awesome Icon Library -->
     <link
       rel="stylesheet"
@@ -41,6 +42,7 @@
           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
           <div class="nav_list--Menu">
             <li class="nav_listItem"><a href="./index.html">Home</a></li>
+           
             <li class="nav_listItem menu--item">
               <a href="#countries-food">Countries Food</a>
               <div class="dropdown-options">
@@ -68,14 +70,14 @@
       </section>
       <section class="foodSlider">
         <div class="foodSlider_wrapper foodSwiper">
-          <div class="slider--content swiper-wrapper" id="slider">
+          <div class="slider--content">
             <div class="slide">
               <img
-                src="./Assets/food/Egypt/tarb_Egypt.jpg"
-                alt="Tarb Egyptian food"
+                src="./Assets/food/Egypt/Fuul-768x499.png"
+                alt="Ful Egyptian food"
               />
               <div class="slide_info">
-                <h3 class="slide_title">Tarb-Egyptian Recipy</h3>
+                <h3 class="slide_title">Ful-Egyptian Recipy</h3>
               </div>
             </div>
             <div class="slide">
@@ -117,8 +119,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next nav-btn"></div>
-          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-button-next slide-btn"></div>
+          <div class="swiper-button-prev slide-btn"></div>
         </div>
       </section>
       <section class="about">
@@ -135,7 +137,7 @@
         </div>
       </section>
       <section class="food" id="countries-food">
-        <div class="food_wrapper">
+        <div class="food_wrapper ">
           <h2 class="subTitle">Food</h2>
           <div class="min_wrapper">
             <!-- Dr. Congo food -->
@@ -147,13 +149,8 @@
               />
 
               <div>
-                <h4 class="food-name">Kwanga</h4>
-                <p class="food-description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+                <h4 class="food-name">Kwanga</h4>            
+                <a href="./pages/drcongo.html" class="goto">Dr. Congo Recipies</a>
               </div>
             </div>
             <div class="min_wrapper-box">
@@ -165,12 +162,8 @@
 
               <div>
                 <h4 class="food-name">Caakiri</h4>
-                <p class="food-description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+              
+                <a href="./pages/drcongo.html" class="goto">Dr. Congo Recipies</a>
               </div>
             </div>
             <!-- Nigerian food -->
@@ -183,12 +176,8 @@
 
               <div>
                 <h4 class="food-name">Jollof Rice</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+              
+                <a href="./pages/nigeria.html" class="goto">Nigerian Recipies</a>
               </div>
             </div>
             <div class="min_wrapper-box">
@@ -200,12 +189,7 @@
 
               <div>
                 <h4 class="food-name">Suya</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+                <a href="./pages/nigeria.html" class="goto">Nigerian Recipies</a>
               </div>
             </div>
             <!-- Ethiopian food -->
@@ -218,99 +202,73 @@
 
               <div>
                 <h4 class="food-name">Beyayenetu</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+               
+                <a href="./pages/ethiopia.html" class="goto">Ethiopian Recipies</a>
               </div>
             </div>
             <div class="min_wrapper-box">
               <img
                 src="./Assets/food/Ethiopia/doro-wet-ethiopia.jpg"
-                alt=""
+                alt="Ethioapin food"
                 class="food-img"
               />
 
               <div>
                 <h4 class="food-name">Doro Wet</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+                <a href="./pages/ethiopia.html" class="goto">Ethiopian Recipies</a>
               </div>
             </div>
             <!-- Egyptian food -->
             <div class="min_wrapper-box">
               <img
-                src="./Assets/food/Egypt/tarb_Egypt.jpg"
-                alt=""
+                src="./Assets/food/Egypt/Besarah.jpg"
+                alt="Egyptian Food"
                 class="food-img"
               />
 
               <div>
-                <h4 class="food-name">Tarb</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+
+                <h4 class="food-name">Besarah</h4>
+                <a href="./pages/ethiopia.html" class="goto">Egyptian Recipies</a>
               </div>
             </div>
             <div class="min_wrapper-box">
               <img
-                src="./Assets/food/Egypt/molokhiya_egypt.jpg"
-                alt=""
+                src="./Assets/food/Egypt/Molokhiya-768x499.png"
+                alt="Egyptian Food"
                 class="food-img"
               />
 
               <div>
                 <h4 class="food-name">Molokhiya</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+               
+                <a href="./pages/ethiopia.html" class="goto">Egyptian Recipies</a>
               </div>
             </div>
             <!-- South African food -->
             <div class="min_wrapper-box">
               <img
-                src="./Assets/food/SA/bobotie_SA.jpg"
-                alt=""
+                src="./Assets/food/SA/south-african-food-bobotie.jpg.webp"
+                alt="South African food"
                 class="food-img"
               />
 
               <div>
                 <h4 class="food-name">Bobotie</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+              
+                <a href="./pages/southafrican.html" class="goto">South African Recipies</a>
               </div>
             </div>
             <div class="min_wrapper-box">
               <img
                 src="./Assets/food/SA/vetkoek_SA.jpg"
-                alt=""
+                alt="south African food"
                 class="food-img"
               />
 
               <div>
                 <h4 class="food-name">Vetkoek</h4>
-                <p class="food-name">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit eros
-                  dignissim nibh, lectus sollicitudin inceptos mus facilisi
-                  proin ultricies tristique sed.
-                </p>
-                <a href="" class="readMore">read more</a>
+                <a href="./pages/southafrican.html" class="goto">South African Recipies</a>
               </div>
             </div>
           </div>
@@ -432,8 +390,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next nav-btn"></div>
-          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-button-next slide-btn"></div>
+          <div class="swiper-button-prev slide-btn"></div>
           <div class="swiper-pagination"></div>
         </div>
       </section>

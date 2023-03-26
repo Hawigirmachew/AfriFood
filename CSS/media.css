@@ -1,28 +1,5 @@
-:root {
-  /* colors */
-  --body-color: #dfe6e8;
-  --color-pinkswan: #b6b6b6;
-  --deeplightblue-color: #f2f8f8;
-  --lightpink-color: #ffa3a3;
-  --orange-color: #ffa500;
-  --white-color: #ffffff;
-  --black-color: #000000;
-  /* font-families */
-  --font-family: "Lato", sans-serif;
-  /* font-size */
-  --xxlfont-size: 4rem;
-  --xlfont-size: 3.5rem;
-  --lgfont-size: 2.5rem;
-  --mdfont-size: 2rem;
-  --smfont-size: 1.5rem;
-  --xsfont-size: 1.25rem;
-  --xxsfont-size: 1.1rem;
-}
 
 @media screen and (max-width: 1024px) {
-  .logo--name {
-    font-size: var(--xxsfont-size);
-  }
   .logo {
     width: 80px;
     height: 57px;
@@ -38,7 +15,6 @@
     align-items: center;
     justify-items: center;
   }
-  /* footer */
 }
 @media screen and (max-width: 1020px) {
   .min_wrapper {
@@ -58,48 +34,6 @@
   .btn{
     padding: 10px 30px;
   }
-  .nav_wrapper {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  .nav_list--Menu {
-    width: 50%;
-    margin: 5px auto 0;
-    box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
-    display: none;
-    position: absolute;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 10px 0;
-    z-index: 1;
-  }
-  .nav_list--Menu li:hover {
-    display: inline-block;
-    transition: 0.3s ease;
-  }
-
-  .nav_listItem + .nav_listItem {
-    margin-left: 0px;
-    margin-top: 12px;
-  }
-  .nav_listItem a {
-    color: var(--logo-color);
-  }
-  input[type="checkbox"]:checked ~ .nav_list--Menu {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
-  .dropdown-options {
-    width:70%;
-   left: 140px;
-   /* font-size: 0.2rem; */
-  }
-  .dropdown-options a{
-    font-size: 0.8rem;
-  }
   /* banner--section */
   .banner--qoute {
     left: 300px;
@@ -115,36 +49,19 @@
   .min_wrapper {
     grid-template-columns: repeat(2, 270px);
   }
-  .carousel-item {
-    height: 300px;
-  }
+  
   .reviews_wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 0.5rem;
   }
-  .country_food {
-    flex-direction: column;
-    align-items: center;
-  }
-  .country_food:nth-last-of-type(2n) {
-    flex-direction: column;
-    align-items: center;
-  }
-  .image_menu img {
-    align-self: center;
-  }
+
   /* food--slider */
-  .nav-btn {
-    display: none;
-  }
+ 
   .slide {
     flex-direction: column;
   }
-  /* contact page */
-  .contact-page__title,
-  .about_afrifood-wrapper  h1 {
-    font-size: var(--mdfont-size);
-  }
+ 
+  
 }
 @media screen and (max-width: 576px) {
    .btn{
@@ -159,34 +76,13 @@
     top: 30px;
     font-size: 2.5rem;
   }
+  /* food slide section */
   .min_wrapper {
     grid-template-columns: repeat(1, 315px);
   }
-
-  .footer_wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: left;
-    column-gap: 2rem;
-    row-gap: 0.4rem;
-  }
-
-  .footer_wrapper div + .footer_wrapper div {
-    margin-top: 10px;
-  }
-  /* contact--page */
-  .contactPage_wrapper {
-    flex-direction: column-reverse;
-  }
 }
 @media screen and (max-width: 425px) {
-  .footer_wrapper {
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    justify-content: center;
-    /* justify-items: center; */
-  }
-
-  .banner--qoute {
+ .banner--qoute {
     left: 70px;
     top: 15px;
   }
@@ -198,6 +94,7 @@
     top: 10px;
     font-size: 2rem;
   }
+  /* food slide section */
   .min_wrapper {
     grid-template-columns: repeat(1, 250px);
   }
@@ -205,13 +102,10 @@
     font-size: 1.2rem;
     line-height: 1rem;
   }
+  /* about section */
   .about_wrapper p {
     font-size: 0.9rem;
     line-height: 0.9rem;
-  }
-  /* contact--page */
-  .addressIcons__items {
-    flex-direction: column;
   }
 }
 @media screen and (max-width: 250px) {
@@ -219,6 +113,7 @@
     left: 30px;
     line-height: 2.5rem;
   }
+  /* food slide section */
   .min_wrapper {
     grid-template-columns: repeat(1, 170px);
   }

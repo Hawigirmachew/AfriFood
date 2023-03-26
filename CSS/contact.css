@@ -62,4 +62,19 @@
     display: flex;
     align-items: center;
 }
+@media screen and (max-width:768px) {
+  .countact-page__title{
+    font-size: var(--mdfont-size);
+  }
+}
+@media screen and (max-width:576px) {
+  .contactPage_wrapper {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width:320px) {
+  .addressIcons__items {
+    flex-direction: column;
+  }
+}
 

@@ -1,510 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/countries.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
     <script src="../JS/main.js" defer></script>
     <title>Egyptian Food</title>
-</head>
-<body>
-  <nav class="nav_bar">
-    <div class="nav_wrapper">
-      <div>
-        <img src="../Assets/logo.jpg" alt="" class="logo" />
-        <span class="logo--name">AFRIFOOD</span>
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div class="nav_wrapper">
+        <div>
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <span class="logo--name">AFRIFOOD</span>
+        </div>
+        <ul class="nav_list">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="nav_list--Menu">
+            <li class="nav_listItem"><a href="../index.html">Home</a></li>
+            <li class="nav_listItem menu--item">
+              <a href="#egyptian-food">Countries Food</a>
+              <div class="dropdown-options">
+                <a href="../pages/nigeria.html">Nigeria</a>
+                <a href="../pages/ethiopia.html">Ethiopia</a>
+                <a href="../pages/southafrican.html">South Africa</a>
+                <a href="#">Egypt</a>
+                <a href="../pages/drcongo.html">Dr.Congo</a>
+
+                <!-- <a href="#">Logout</a> -->
+              </div>
+            </li>
+            <li class="nav_listItem"><a href="./about.html">About</a></li>
+            <li class="nav_listItem"><a href="./contact.html">Contact</a></li>
+            <!-- <li class="nav_listItem"><a href="./login.html">Login</a></li> -->
+          </div>
+        </ul>
       </div>
-      <ul class="nav_list">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <div class="nav_list--Menu">
-          <li class="nav_listItem"><a href="../index.html">Home</a></li>
-          <li class="nav_listItem menu--item">
-            <a href="#egyptian-food">Countries Food</a>
-            <div class="dropdown-options">
-              <a href="../pages/nigeria.html">Nigeria</a>
-              <a href="../pages/ethiopia.html">Ethiopia</a>
-              <a href="../pages/southafrican.html">South Africa</a>
-              <a href="#">Egypt</a>
-              <a href="../pages/drcongo.html">Dr.Congo</a>
-
-              <!-- <a href="#">Logout</a> -->
-            </div>
-          </li>
-          <li class="nav_listItem"><a href="./about.html">About</a></li>
-          <li class="nav_listItem"><a href="./contact.html">Contact</a></li>
-          <!-- <li class="nav_listItem"><a href="./login.html">Login</a></li> -->
-        </div>
-      </ul>
-    </div>
-  </nav>
-  <main class="main">
-    <section class="food" id="egyptian-food">
-      <div class="food_wrapper">
-        <h2 class="subTitle">Food</h2>
-        <div class="min_wrapper">
-          <!-- Dr. Congo food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/amalaEwedoSoup_nigeria.webp"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">AmalaEwedoSoup</h3>
-              <p class="food-description">
-                Yam flour is cooked until it forms a smooth, fluffy side dish
-                that can be served with a variety of soups, such as the
-                flavorful Ewudu.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fried-Ripe-Plantains-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Fried Ripe</h3>
-              <p class="food-description">
-                Fried plantains are a big part of Caribbean, Asian and African
-                cuisine. In Yoruba, it’s called Dodo and it’s served with
-                everything from Jollof rice to savory stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Nigerian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fufu-1-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Jollof Rice</h3>
-              <p class="food-name">
-                n Central and Western Africa, fufu is any variety of starchy
-                food that has been mashed and shaped into balls and eaten as a
-                staple. Fufu can be made with yam, cassava or other ground
-                provisions. Served it with soup, stew, or sauce. So satisfying
-                and delicious!
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Iyan-Pounded-Yam-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Iyan Pounded</h3>
-              <p class="food-name">
-                If you like mashed potatoes, you’re sure to enjoy pounded yam.
-                This tasty staple is super filling and can be served with
-                traditional African soups and stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Ethiopian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Garri-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Garri</h3>
-              <p class="food-name">
-                Looking for something new and wholesome to add to your
-                breakfast menu? Garri is a Nigerian cereal made with cassava
-                and milk. Toppings like nuts and berries make this dish even
-                tastier.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Grilled-Plantain-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Boli</h3>
-              <p class="food-name">
-                This popular Nigerian street food features sweet ripe
-                plantains coated in olive oil, delicately seasoned and grilled
-                to perfection.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Egyptian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Eba-Cassava-Meal-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Eba Cassava</h3>
-              <p class="food-name">
-                Eba food is a traditional staple made from cassava. It can be
-                paired with other tasty Nigerian dishes such as Okro soup or
-                meat stew.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nkwobi-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nkwobi</h3>
-              <p class="food-name">
-                In eastern Nigeria, Nkwobi is served in popular restaurants
-                and is considered a delicacy. This spicy dish is made with cow
-                foot, which is seasoned and pressure cooked until tender.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- South African food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Chicken-Empanadas-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Bobotie</h3>
-              <p class="food-name">
-                If you’re a fan of Mexican empanadas, expand your palate by
-                trying the Nigerian meat pie. Ground beef is seasoned and
-                cooked with diced potatoes and carrots, then stuffed inside a
-                flaky, savory pastry.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nigerian-Buns-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nigerian Buns</h3>
-              <p class="food-name">
-                These sweet buns are beyond tasty and are ready in only 15
-                minutes. You’re sure to love the sweet, crunchy texture and
-                rich vanilla flavor.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="min_wrapper">
-          <!-- Dr. Congo food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/amalaEwedoSoup_nigeria.webp"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">AmalaEwedoSoup</h3>
-              <p class="food-description">
-                Yam flour is cooked until it forms a smooth, fluffy side dish
-                that can be served with a variety of soups, such as the
-                flavorful Ewudu.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fried-Ripe-Plantains-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Fried Ripe</h3>
-              <p class="food-description">
-                Fried plantains are a big part of Caribbean, Asian and African
-                cuisine. In Yoruba, it’s called Dodo and it’s served with
-                everything from Jollof rice to savory stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Nigerian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fufu-1-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Jollof Rice</h3>
-              <p class="food-name">
-                n Central and Western Africa, fufu is any variety of starchy
-                food that has been mashed and shaped into balls and eaten as a
-                staple. Fufu can be made with yam, cassava or other ground
-                provisions. Served it with soup, stew, or sauce. So satisfying
-                and delicious!
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Iyan-Pounded-Yam-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Iyan Pounded</h3>
-              <p class="food-name">
-                If you like mashed potatoes, you’re sure to enjoy pounded yam.
-                This tasty staple is super filling and can be served with
-                traditional African soups and stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Ethiopian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Garri-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Garri</h3>
-              <p class="food-name">
-                Looking for something new and wholesome to add to your
-                breakfast menu? Garri is a Nigerian cereal made with cassava
-                and milk. Toppings like nuts and berries make this dish even
-                tastier.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Grilled-Plantain-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Boli</h3>
-              <p class="food-name">
-                This popular Nigerian street food features sweet ripe
-                plantains coated in olive oil, delicately seasoned and grilled
-                to perfection.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Egyptian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Eba-Cassava-Meal-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Eba Cassava</h3>
-              <p class="food-name">
-                Eba food is a traditional staple made from cassava. It can be
-                paired with other tasty Nigerian dishes such as Okro soup or
-                meat stew.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nkwobi-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nkwobi</h3>
-              <p class="food-name">
-                In eastern Nigeria, Nkwobi is served in popular restaurants
-                and is considered a delicacy. This spicy dish is made with cow
-                foot, which is seasoned and pressure cooked until tender.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- South African food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Chicken-Empanadas-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Bobotie</h3>
-              <p class="food-name">
-                If you’re a fan of Mexican empanadas, expand your palate by
-                trying the Nigerian meat pie. Ground beef is seasoned and
-                cooked with diced potatoes and carrots, then stuffed inside a
-                flaky, savory pastry.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nigerian-Buns-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nigerian Buns</h3>
-              <p class="food-name">
-                These sweet buns are beyond tasty and are ready in only 15
-                minutes. You’re sure to love the sweet, crunchy texture and
-                rich vanilla flavor.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="navigate_wrapper">
-          <a href="#" class="navigate next">1</a>
-          <a href="#" class="navigate prev">2</a>
-        </div>
-      </div>
-    </section>
-  </main>
-    <footer>
-        <div class="footer_wrapper">
-          <div class="footer__logo">
-            <img src="../Assets/logo.jpg" alt="" class="logo" />
-            <p>Come and get African Foods</p>
-            <form class="subscribe">
-              <input
-                type="email"
-                required
-                id="email"
-                placeholder="Enter your eamil"
+    </nav>
+    <main class="main">
+      <section class="hero_section">
+        <h1 class="hero_title">Egyptian Recipies</h1>
+      </section>
+      <section class="food" id="egyptian-food">
+        <div class="food_wrapper">
+          <h2 class="subTitle">Cultural Recipies</h2>
+          <div class="min_wrapper">
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Fuul-768x499.png"
+                alt="Ful Medames egyptian-food"
+                class="food-img"
               />
-  
-              <button type="submit" class="btn btn-login">Subscribe</button>
-            </form>
+
+              <div>
+                <h3 class="food-name">Ful Medames</h3>
+                <p class="food-description">
+                  The most popular street food snack in Egypt, Ful is a paste of
+                  mashed broad (fava) beans flavored with garlic and olive oil.
+                  It is labeled out of large copper pots, often into pockets of
+                  pitta bread and typically sold as an inexpensive takeaway
+                  sandwich.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Taamiya-768x499.png"
+                alt="tamiya egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Taamiya</h3>
+                <p class="food-description">
+                  Egyptian street food staple, known elsewhere as falafel,
+                  Tamiya is made with mashed fava beans and parsley (instead of
+                  chickpeas, which are used elsewhere around the Mediterranean).
+                  It is made in the shape of flat discs rather than round balls
+                  and is typically eaten as a sandwich with salad.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Koshari-768x499.png"
+                alt="Koshari egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Koshari</h3>
+                <p class="food-description">
+                  One of the famous Egyptian dishes, A mix of rice, brown
+                  lentils and macaroni topped with fried onions and a spicy
+                  tomato sauce, koshari is normally eaten in dedicated koshari
+                  restaurants that serve the dish exclusively
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Shawarma-768x499.png"
+                alt="Shawarma egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Shawarma</h3>
+                <p class="food-description">
+                  It is one of the tasty Egyptian dishes, it is a large cone of
+                  pressed lamb or chicken that is rotated vertically in front of
+                  a flame grill. As the meat is cooked it is sliced off and
+                  mixed on a griddle with chopped tomato, onion and parsley
+                  before being rolled in a large disc of flatbread and wrapped
+                  in foil to take away.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Kofta-768x499.png"
+                alt="Kebab and kofta egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Kebab and Kofta</h3>
+                <p class="food-description">
+                  Flame-grilled chunks of lamb (kebab) and spiced minced meat
+                  made into a sausage and grilled on a skewer (kofta) are a
+                  favorite Egyptian food meal. It is typically eaten with a
+                  simple chopped tomato and cucumber salad and a disc of
+                  flatbread.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Molokhiya-768x499.png"
+                alt="Molokhiya egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Molokhiya</h3>
+                <p class="food-description">
+                  It is one of the favorite dishes of Egyptians, Hard to like on
+                  the first encounter, this is a soup made from mallow leaves.
+                  Green in color, it has a thick, viscous texture. Egyptians eat
+                  it with meat such as rabbit or lamb. Fatimid Sultan Hakim
+                  found the dish so unappetizing that he had it banned in the
+                  11th century.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Pigeon-768x499.png"
+                alt="Pigeon egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Pigeon</h3>
+                <p class="food-description">
+                  A traditional delicacy food, pigeons (Hamaam) are bred
+                  throughout Egypt in conical pigeon towers. They are stuffed
+                  with seasoned rice or, even better, bulgur wheat (freek)
+                  before being grilled or baked.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Umm-Ali.jpg"
+                alt="Umm Ali egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Egypt Desserts</h3>
+                <p class="food-description">
+                  This is a must-have dessert, even if you set foot in Egypt for
+                  a few minutes. Om Ali, which means Ali’s mother, is made of
+                  layers of puff pastry soaked in milk and mixed with nuts,
+                  raisins, coconut flakes, and sugar, and then baked. The baked
+                  dough with the hot milk, complemented with several different
+                  ingredients makes this a dish to remember.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Desserts-768x499.png"
+                alt="Desserts egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Egypt Desserts</h3>
+                <p class="ffood-description">
+                  Egyptian desserts are quite light. Mahalabiya is a delicate
+                  rosewater-flavored ground rice dessert, topped with toasted
+                  nuts and cinnamon. Um Ali is similar to the English bread and
+                  butter pudding but is less soft and spongy as it is made with
+                  local dry bread. Roz bi laban is rice pudding, which is always
+                  served cold.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
           </div>
-  
-          <div class="locations">
-            <h3 class="footer--title">Location</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="../pages/nigeria.html" class="countries">Nigeria</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/ethiopia.html" class="countries">Ethiopia</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/southafrican.html" class="countries">South Africa</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="#" class="countries">Egypt</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/drcongo.html" class="countries">Dr. Congo</a>
-              </li>
-            </ul>
+          <div class="min_wrapper">
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Baklava-768x499.png"
+                alt="Baklava egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Baklava</h3>
+                <p class="food-description">
+                  Egyptians are big fans of the sticky for this kind of food,
+                  syrup-drenched, nut-filled filo pastries known collectively as
+                  baklava. There are numerous different kinds such as konafa,
+                  which has a cream base and a crunchy vermicelli pastry crust
+                  and Basbousa, made of semolina pastry soaked in honey and
+                  topped with hazelnuts.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Baba-Ganoush.jpg"
+                alt="Baba-Ganoush egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Baba Ganoush</h3>
+                <p class="food-description">
+                  While many think it was invented in Lebanon, baba ganoush is a
+                  dish you will soon find on Egyptian restaurant menus. It’s a
+                  cream of roasted eggplant, olive oil, garlic, sesame paste
+                  (tahini) and lemon, very similar in texture to hummus, which
+                  like hummus is eaten with pita bread.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Egyptian-Fatteh.jpg"
+                alt="Fatteh egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Egyptian-Fatteh</h3>
+                <p class="food-description">
+                  It is a dish of meat (beef or chicken), rice, garlic, and
+                  layers of dry bread soaked in broth. It is usually cooked in
+                  the oven and served with yogurt and nuts
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Mahshi.jpg"
+                alt="Mahshi egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Iyan Pounded</h3>
+                <p class="food-description">
+                  Another great dish for vegetarian travelers. It basically
+                  consists of baked vegetables, usually peppers, zucchini or
+                  aubergine, stuffed with rice mixed with aromatic herbs
+                  (parsley, coriander…).It is accompanied by a drink sauce.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Besarah.jpg"
+                alt="Besarah egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Garri</h3>
+                <p class="food-description">
+                  A creamy green puree prepared with parsley, dill, leek, ground
+                  beans, spices, green pepper and fried onions on top. A perfect
+                  meal for vegetarians.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Alexandrian-Kebdah.jpg"
+                alt="Alexandrian-Kebdah egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Alexandrian-Kebdah</h3>
+                <p class="food-description">
+                  It belongs to the street food but it is also cooked at home.
+                  The liver is prepared with hot pepper and garlic or onion can
+                  be added.As for the sausage, it is usually cooked in different
+                  ways, but mainly with tomato sauce and hot pepper. Both are
+                  served with pickles.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Sayadiyah-Fish.jpg"
+                alt="Sayadiyah-Fish egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Sayadiyah-Fish</h3>
+                <p class="food-description">
+                  A dish that is cooked mainly in coastal cities such as Suez,
+                  Portsaid, and Alexandria.It is made of white fish such as sea
+                  bass or bluefish, and cooked with yellow rice, onions, spices
+                  and tomato sauce. It is then cooked in a casserole.It is a
+                  typical Egyptian meal to be savored and enjoyed.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Egypt/Hawawshi.jpg"
+                alt="Hawawshi egyptian-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Nkwobi</h3>
+                <p class="food-description">
+                  It is a traditional food in Egypt, it’s a bread (something
+                  similar to pita bread) that is usually filled with minced
+                  meat, onion, pepper. Hawawshi is perhaps best known as a
+                  staple of home-style Egyptian cooking to make you feel good.
+                </p>
+                <a
+                  href="https://www.cleopatraegypttours.com/travel-guide/egyptian-culture/top-10-egyptian-food/"
+                  class="readMore"
+                  target="_blank"
+                  >read more</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="quickLinks">
-            <h3 class="footer--title">Links</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="../index.html" class="quickLinks--link">Home</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/about.html" class="quickLinks--link">About</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/food.html" class="quickLinks--link">Menu</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/contact.html" class="quickLinks--link">Contact</a>
-              </li>
-            </ul>
+          <div class="navigate_wrapper">
+            <a href="#egyptian-food" class="navigate next active">1</a>
+            <a href="#egyptian-food" class="navigate prev active">2</a>
           </div>
-          <div class="social">
-            <h3 class="footer--title">Contact Us</h3>
-            <ul class="socialIcons">
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/instagram logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/facebook logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/twitter logo.png"
-                    alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
-          
         </div>
-        
-        <div class="copy">
-          <p>
-            Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
-            Rights Reserved.
-          </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer__logo">
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <p>Come and get African Foods</p>
+          <form class="subscribe">
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="Enter your eamil"
+            />
+
+            <button type="submit" class="btn btn-login">Subscribe</button>
+          </form>
         </div>
-      </footer>  
-</body>
+
+        <div class="locations">
+          <h3 class="footer--title">Location</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="../pages/nigeria.html" class="countries">Nigeria</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/ethiopia.html" class="countries">Ethiopia</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/southafrican.html" class="countries"
+                >South Africa</a
+              >
+            </li>
+            <li class="footer--listItems">
+              <a href="#" class="countries">Egypt</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/drcongo.html" class="countries">Dr. Congo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quickLinks">
+          <h3 class="footer--title">Links</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="../index.html" class="quickLinks--link">Home</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/about.html" class="quickLinks--link">About</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/food.html" class="quickLinks--link">Menu</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/contact.html" class="quickLinks--link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3 class="footer--title">Contact Us</h3>
+          <ul class="socialIcons">
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/instagram logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/facebook logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/twitter logo.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>
+          Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

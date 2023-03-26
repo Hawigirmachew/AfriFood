@@ -1,510 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/countries.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
     <script src="../JS/main.js" defer></script>
     <title>Dr. Congo Food</title>
-</head>
-<body>
-  <nav class="nav_bar">
-    <div class="nav_wrapper">
-      <div>
-        <img src="../Assets/logo.jpg" alt="" class="logo" />
-        <span class="logo--name">AFRIFOOD</span>
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div class="nav_wrapper">
+        <div>
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <span class="logo--name">AFRIFOOD</span>
+        </div>
+        <ul class="nav_list">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="nav_list--Menu">
+            <li class="nav_listItem"><a href="../index.html">Home</a></li>
+            <li class="nav_listItem menu--item">
+              <a href="../index.html#countries-food">Countries Food</a>
+              <div class="dropdown-options">
+                <a href="./nigeria.html">Nigeria</a>
+                <a href=".ethiopia.html">Ethiopia</a>
+                <a href="./southafrican.html">South Africa</a>
+                <a href="./egypt.html">Egypt</a>
+                <a href="#">Dr.Congo</a>
+              </div>
+            </li>
+            <li class="nav_listItem"><a href="./about.html">About</a></li>
+            <li class="nav_listItem"><a href="./contact.html">Contact</a></li>
+          </div>
+        </ul>
       </div>
-      <ul class="nav_list">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <div class="nav_list--Menu">
-          <li class="nav_listItem"><a href="../index.html">Home</a></li>
-          <li class="nav_listItem menu--item">
-            <a href="#countries-food">Countries Food</a>
-            <div class="dropdown-options">
-              <a href="../pages/nigeria.html">Nigeria</a>
-              <a href="../pages/ethiopia.html">Ethiopia</a>
-              <a href="#">South Africa</a>
-              <a href="../pages/egypt.html">Egypt</a>
-              <a href="../pages/drcongo.html">Dr.Congo</a>
-
-              <!-- <a href="#">Logout</a> -->
-            </div>
-          </li>
-          <li class="nav_listItem"><a href="./about.html">About</a></li>
-          <li class="nav_listItem"><a href="./contact.html">Contact</a></li>
-          <!-- <li class="nav_listItem"><a href="./login.html">Login</a></li> -->
-        </div>
-      </ul>
-    </div>
-  </nav>
-  <main class="main">
-    <section class="food" id="countries-food">
-      <div class="food_wrapper">
-        <h2 class="subTitle">Food</h2>
-        <div class="min_wrapper">
-          <!-- Dr. Congo food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/amalaEwedoSoup_nigeria.webp"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">AmalaEwedoSoup</h3>
-              <p class="food-description">
-                Yam flour is cooked until it forms a smooth, fluffy side dish
-                that can be served with a variety of soups, such as the
-                flavorful Ewudu.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fried-Ripe-Plantains-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Fried Ripe</h3>
-              <p class="food-description">
-                Fried plantains are a big part of Caribbean, Asian and African
-                cuisine. In Yoruba, it’s called Dodo and it’s served with
-                everything from Jollof rice to savory stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Nigerian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fufu-1-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Jollof Rice</h3>
-              <p class="food-name">
-                n Central and Western Africa, fufu is any variety of starchy
-                food that has been mashed and shaped into balls and eaten as a
-                staple. Fufu can be made with yam, cassava or other ground
-                provisions. Served it with soup, stew, or sauce. So satisfying
-                and delicious!
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Iyan-Pounded-Yam-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Iyan Pounded</h3>
-              <p class="food-name">
-                If you like mashed potatoes, you’re sure to enjoy pounded yam.
-                This tasty staple is super filling and can be served with
-                traditional African soups and stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Ethiopian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Garri-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Garri</h3>
-              <p class="food-name">
-                Looking for something new and wholesome to add to your
-                breakfast menu? Garri is a Nigerian cereal made with cassava
-                and milk. Toppings like nuts and berries make this dish even
-                tastier.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Grilled-Plantain-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Boli</h3>
-              <p class="food-name">
-                This popular Nigerian street food features sweet ripe
-                plantains coated in olive oil, delicately seasoned and grilled
-                to perfection.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Egyptian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Eba-Cassava-Meal-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Eba Cassava</h3>
-              <p class="food-name">
-                Eba food is a traditional staple made from cassava. It can be
-                paired with other tasty Nigerian dishes such as Okro soup or
-                meat stew.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nkwobi-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nkwobi</h3>
-              <p class="food-name">
-                In eastern Nigeria, Nkwobi is served in popular restaurants
-                and is considered a delicacy. This spicy dish is made with cow
-                foot, which is seasoned and pressure cooked until tender.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- South African food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Chicken-Empanadas-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Bobotie</h3>
-              <p class="food-name">
-                If you’re a fan of Mexican empanadas, expand your palate by
-                trying the Nigerian meat pie. Ground beef is seasoned and
-                cooked with diced potatoes and carrots, then stuffed inside a
-                flaky, savory pastry.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nigerian-Buns-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nigerian Buns</h3>
-              <p class="food-name">
-                These sweet buns are beyond tasty and are ready in only 15
-                minutes. You’re sure to love the sweet, crunchy texture and
-                rich vanilla flavor.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="min_wrapper">
-          <!-- Dr. Congo food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/amalaEwedoSoup_nigeria.webp"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">AmalaEwedoSoup</h3>
-              <p class="food-description">
-                Yam flour is cooked until it forms a smooth, fluffy side dish
-                that can be served with a variety of soups, such as the
-                flavorful Ewudu.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fried-Ripe-Plantains-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Fried Ripe</h3>
-              <p class="food-description">
-                Fried plantains are a big part of Caribbean, Asian and African
-                cuisine. In Yoruba, it’s called Dodo and it’s served with
-                everything from Jollof rice to savory stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Nigerian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fufu-1-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Jollof Rice</h3>
-              <p class="food-name">
-                n Central and Western Africa, fufu is any variety of starchy
-                food that has been mashed and shaped into balls and eaten as a
-                staple. Fufu can be made with yam, cassava or other ground
-                provisions. Served it with soup, stew, or sauce. So satisfying
-                and delicious!
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Iyan-Pounded-Yam-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Iyan Pounded</h3>
-              <p class="food-name">
-                If you like mashed potatoes, you’re sure to enjoy pounded yam.
-                This tasty staple is super filling and can be served with
-                traditional African soups and stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Ethiopian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Garri-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Garri</h3>
-              <p class="food-name">
-                Looking for something new and wholesome to add to your
-                breakfast menu? Garri is a Nigerian cereal made with cassava
-                and milk. Toppings like nuts and berries make this dish even
-                tastier.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Grilled-Plantain-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Boli</h3>
-              <p class="food-name">
-                This popular Nigerian street food features sweet ripe
-                plantains coated in olive oil, delicately seasoned and grilled
-                to perfection.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Egyptian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Eba-Cassava-Meal-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Eba Cassava</h3>
-              <p class="food-name">
-                Eba food is a traditional staple made from cassava. It can be
-                paired with other tasty Nigerian dishes such as Okro soup or
-                meat stew.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nkwobi-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nkwobi</h3>
-              <p class="food-name">
-                In eastern Nigeria, Nkwobi is served in popular restaurants
-                and is considered a delicacy. This spicy dish is made with cow
-                foot, which is seasoned and pressure cooked until tender.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- South African food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Chicken-Empanadas-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Bobotie</h3>
-              <p class="food-name">
-                If you’re a fan of Mexican empanadas, expand your palate by
-                trying the Nigerian meat pie. Ground beef is seasoned and
-                cooked with diced potatoes and carrots, then stuffed inside a
-                flaky, savory pastry.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nigerian-Buns-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nigerian Buns</h3>
-              <p class="food-name">
-                These sweet buns are beyond tasty and are ready in only 15
-                minutes. You’re sure to love the sweet, crunchy texture and
-                rich vanilla flavor.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="navigate_wrapper">
-          <a href="#" class="navigate next">1</a>
-          <a href="#" class="navigate prev">2</a>
-        </div>
-      </div>
-    </section>
-  </main>
-    <footer>
-        <div class="footer_wrapper">
-          <div class="footer__logo">
-            <img src="../Assets/logo.jpg" alt="" class="logo" />
-            <p>Come and get African Foods</p>
-            <form class="subscribe">
-              <input
-                type="email"
-                required
-                id="email"
-                placeholder="Enter your eamil"
+    </nav>
+    <main class="main">
+      <section class="hero_section">
+        <h1 class="hero_title">Dr. Congo Recipies</h1>
+      </section>
+      <section class="food" id="drcondo-food">
+        <div class="food_wrapper">
+          <h2 class="subTitle">Cultural Recipies</h2>
+          <div class="min_wrapper">
+            <!-- Dr. Congo food -->
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Liboke.jpg.webp"
+                alt=""
+                class="food-img"
               />
-  
-              <button type="submit" class="btn btn-login">Subscribe</button>
-            </form>
+
+              <div>
+                <h3 class="food-name">Liboke</h3>
+                <p class="food-description">
+                  It is a dish generally composed of boiled fish with tomato,
+                  salt, and chili and wrapped in banana leaves or other wild
+                  plants, which will imbue the fish with their aromas.
+                  Everything is then put on a grill.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="
+              "
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Pondu-960x1048.jpg.webp"
+                alt="Pondu Congo food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Pondu</h3>
+                <p class="food-description">
+                  Pondu is one of the most popular dishes throughout the
+                  country. The dish is made using prepared cassava leaves that
+                  are cooked in a pot, with or without spices.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Fufu-960x960.jpg.webp"
+                alt="Fufu food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Fufu</h3>
+                <p class="food-description">
+                  Fufu is one of—if not the—staple food par excellence of the
+                  Congo. From north to south, from east to west, fufu is present
+                  on all Congolese tables.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                ><a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Kwanga-congo.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Chikwanga(Kwanga)</h3>
+                <p class="food-description">
+                  Chikwange is usually not prepared at home. Its preparation
+                  time is quite long; it may take one to two weeks. You have to
+                  soak the cassava in water for several days before preparing it
+                  and letting it drain for another two or three days before
+                  wrapping it in banana leaves and boiling it for a good hour.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Lituma-960x960.jpg.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Lituma</h3>
+                <p class="food-description">
+                  Lituma looks like fufu but consists of plantains that are
+                  boiled and then peeled and pounded. At this stage, spices can
+                  be added to the paste for added flavor.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Ndakala-960x960.jpg.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Ndakala</h3>
+                <p class="food-description">
+                  Ndakala are small dried fish also nicknamed 1000 poisons. They
+                  can be fried in oil with a bit of chili and savored with fufu
+                  or chikwange. Ndakala can also be mixed with vegetables of all
+                  kinds, bathed in tomato sauce.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Plantains-960x960.jpg.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Makemba (Plantains)</h3>
+                <p class="food-description">
+                  As its French name suggests, it is a kind of banana, but one
+                  that cannot be eaten raw; it needs to be either fried in oil,
+                  boiled in water, or grilled. And as we saw above, when boiled,
+                  plantain can be made into lituma.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Fumbwa-960x960.jpg.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Fumbwa</h3>
+                <p class="food-description">
+                  Fumbwa is a vegetable made from the green leaves of the plant
+                  gnetum africanum. The leaves are rolled into a bundle and
+                  then, using a knife, they are cut into thin strips, which
+                  gives them the appearance of filament.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Matembele-960x960.jpg.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Matembele</h3>
+                <p class="food-description">
+                  Matembele is a vegetable made from the leaves of sweet
+                  potatoes. It is a creeping plant that grows very quickly in
+                  almost any plot in the Congo. It is quite easy to prepare with
+                  a few spices and oil and goes well with almost any local
+                  accompaniment.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
           </div>
-  
-          <div class="locations">
-            <h3 class="footer--title">Location</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="../pages/nigeria.html" class="countries">Nigeria</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/ethiopia.html" class="countries">Ethiopia</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/southafrican.html" class="countries">South Africa</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/egypt.html" class="countries">Egypt</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="" class="countries">Dr. Congo</a>
-              </li>
-            </ul>
+          <div class="min_wrapper">
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Mayebo-1-960x1200.jpg.webp"
+                alt=""
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Mayebo</h3>
+                <p class="food-description">
+                  One of the delicacies of Congolese cuisine is mayebo:
+                  mushrooms of different species, fresh or dried, which can be
+                  prepared in tomato sauce or palm oil as well as mixed with
+                  vegetables, prepared in broth, or even in a stew.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Mbinzo.jpg.webp"
+                alt="Mbinzo Dr. Congo food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Mbinzo (Caterpillars)</h3>
+                <p class="food-description">
+                  These are dried caterpillars. In Kinshasa, they are generally
+                  cooked with a light white sauce made of onions and a little
+                  oil with the essential red chili pepper.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Mbika-960x959.jpg.webp"
+                alt="Mbika Dr. Congo food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Mbika</h3>
+                <p class="food-description">
+                  A kind of flour made from ground squash seeds that tends to be
+                  wrapped around the food it is cooked with.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Tshomba-tsha-kabiola-960x960.jpg.webp"
+                alt="Tshomba Tsha Kabiola Dr. Congo food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Tshomba Tsha Kabiola</h3>
+                <p class="food-description">
+                  n Central and Western Africa, fufu is any variety of starchy
+                  food that has been mashed and shaped into balls and eaten as a
+                  staple. Fufu can be made with yam, cassava or other ground
+                  provisions. Served it with soup, stew, or sauce. So satisfying
+                  and delicious!
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Mpiodi-960x960.jpg.webp"
+                alt="Mpiodi Dr. Congo food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Mpiodi (Horse Mackerel)</h3>
+                <p class="food-description">
+                  This fish is so popular, particularly in Kinshasa, that it is
+                  nicknamed the friend of Kinois (inhabitants of Kinshasa); one
+                  of its other nicknames is Thompson. Another surprising fact is
+                  that mpiodi costs far less than locally caught fish.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Chicken-Thighs-960x960.jpg.webp"
+                alt="Cuisse Dr. Congo food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Cuisse</h3>
+                <p class="food-description">
+                  These are chicken thighs from chickens raised in battery
+                  cages. They are very recognizable to the eye because they are
+                  much larger than the usual chicken thighs, and they have a
+                  much more tender and full flesh.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Poulet-Mayo-1-960x1120.jpg.webp"
+                alt="Chicken Mayo Dr. Congo food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Chicken Mayo</h3>
+                <p class="food-description">
+                  This dish appeared over the past decade, and chicken mayo is
+                  one of the latest findings of the Congolese Cordon Bleu.
+                </p>
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/Ya-Jean.jpg.webp"
+                alt="Ya Jean"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Ya Jean</h3>
+                <p class="food-description">
+                  It is smoked goat meat. The goat is slaughtered and butchered
+                  on the spot, and everyone chooses their piece, which is then
+                  cut and seasoned.
+                </p>
+
+                <a
+                  href="https://www.chefspencil.com/most-popular-foods-in-congo/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/Dr. Congo/chicken-moambe-congo.webp"
+                alt="Mossaka Dr. Congo Food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Mossaka</h3>
+                <p class="food-description">
+                  It is traditional Congolese dish well known abroad. It
+                  consists of a roast chinken cooked in a thick sauce based on
+                  pallm nut extracts.
+                </p>
+                <a
+                  href="https://afroculture.net/8-congolese-dishes-not-to-be-missed-congolese-cooking/"
+                  target="_blank"
+                  class="readMore"
+                  >read more</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="quickLinks">
-            <h3 class="footer--title">Links</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="../index.html" class="quickLinks--link">Home</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/about.html" class="quickLinks--link">About</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/food.html" class="quickLinks--link">Menu</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/contact.html" class="quickLinks--link">Contact</a>
-              </li>
-            </ul>
+          <div class="navigate_wrapper">
+            <a href="#drcondo-food" class="navigate next active">1</a>
+            <a href="#drcondo-food" class="navigate prev active">2</a>
           </div>
-          <div class="social">
-            <h3 class="footer--title">Contact Us</h3>
-            <ul class="socialIcons">
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/instagram logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/facebook logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/twitter logo.png"
-                    alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
-        
         </div>
-        
-        <div class="copy">
-          <p>
-            Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
-            Rights Reserved.
-          </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer__logo">
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <p>Come and get African Foods</p>
+          <form class="subscribe">
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="Enter your eamil"
+            />
+
+            <button type="submit" class="btn btn-login">Subscribe</button>
+          </form>
         </div>
-      </footer>
-</body>
+
+        <div class="locations">
+          <h3 class="footer--title">Location</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="../pages/nigeria.html" class="countries">Nigeria</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/ethiopia.html" class="countries">Ethiopia</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/southafrican.html" class="countries"
+                >South Africa</a
+              >
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/egypt.html" class="countries">Egypt</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="" class="countries">Dr. Congo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quickLinks">
+          <h3 class="footer--title">Links</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="../index.html" class="quickLinks--link">Home</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="./about.html" class="quickLinks--link">About</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../index.html#countries-food" class="quickLinks--link"
+                >Counties Food</a
+              >
+            </li>
+            <li class="footer--listItems">
+              <a href="./contact.html" class="quickLinks--link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3 class="footer--title">Contact Us</h3>
+          <ul class="socialIcons">
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/instagram logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/facebook logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/twitter logo.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>
+          Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,33 @@
+.main{
+   background-color: transparent;
+}
+.thanks{
+    /* background-color: yellow; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thanks_wrapper{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--font-family-poppins);
+}
+.thanks_wrapper h1{
+    font-size: var( --lgfont-size);
+}
+.thanks_wrapper .btn-color{
+    font-size: var(--mdfont-size);
+    text-align: center;
+    color: var(--white-color);
+}
+@media screen and (max-width:275px) {
+    .thanks_wrapper h1{
+        font-size: var(  --smfont-size);
+    } 
+    .thanks_wrapper .btn-color{
+        font-size: var(--xsfont-size);
+    }
+}

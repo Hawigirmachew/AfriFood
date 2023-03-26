@@ -1,0 +1,124 @@
+.nav_wrapper {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--shadedpink-color);
+  color: var(--white-color);
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo--name {
+  font-size: 2rem;
+  color: var(--white-color);
+}
+.logo {
+  max-width: 100px;
+  width: 1000%;
+  height: 77px;
+}
+#checkbox_toggle,
+.hamburger {
+  display: none;
+}
+.hamburger {
+  font-size: 1.5rem;
+  user-select: none;
+}
+.nav_list--Menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav_listItem + .nav_listItem {
+  margin-left: 50px;
+}
+.nav_listItem a {
+  color: var(--white-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+}
+/* .nav_listItem a:hover {
+  box-sizing: border-box;
+  background: var(--white-color);
+  color: var(--black-color);
+  padding: 2px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+.menu--item {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-options {
+  /* height: 150px; */
+  padding: 5px 10px;
+  display: none;
+  position: absolute;
+  background-color: var(--shadedpink-color);
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
+  color: var(--white-color);
+  opacity: 1;
+  z-index: 1;
+}
+.dropdown-options a {
+  display: block;
+}
+.dropdown-options a +  a{
+  margin-top: 0.5rem;
+}
+.menu--item:hover .dropdown-options {
+  display: block;
+}
+@media screen and (max-width:1024px) {
+ .logo--name {
+    font-size: var(--xxsfont-size);
+  }
+    
+}
+@media screen and (max-width:768px) {
+     .nav_wrapper {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .nav_list--Menu {
+    width: 50%;
+    margin: 5px auto 0;
+    box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--shadedpink-color);
+    z-index: 1;
+  }
+  .nav_list--Menu li a:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  .nav_listItem + .nav_listItem {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  
+  input[type="checkbox"]:checked ~ .nav_list--Menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown-options {
+    width:70%;
+   left: 140px;
+  }
+  .dropdown-options a{
+    font-size: 0.8rem;
+  } 
+    
+}

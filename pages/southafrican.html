@@ -1,510 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/countries.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
     <script src="../JS/main.js" defer></script>
     <title>South African Food</title>
-</head>
-<body>
-  <nav class="nav_bar">
-    <div class="nav_wrapper">
-      <div>
-        <img src="../Assets/logo.jpg" alt="" class="logo" />
-        <span class="logo--name">AFRIFOOD</span>
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div class="nav_wrapper">
+        <div>
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <span class="logo--name">AFRIFOOD</span>
+        </div>
+        <ul class="nav_list">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="nav_list--Menu">
+            <li class="nav_listItem"><a href="../index.html">Home</a></li>
+            <li class="nav_listItem menu--item">
+              <a href="../index.html#coumtries-food">Countries Food</a>
+              <div class="dropdown-options">
+                <a href="./nigeria.html">Nigeria</a>
+                <a href="./ethiopia.html">Ethiopia</a>
+                <a href="#">South Africa</a>
+                <a href="./egypt.html">Egypt</a>
+                <a href="./drcongo.html">Dr.Congo</a>
+              </div>
+            </li>
+            <li class="nav_listItem">
+              <a href="./about.html">About</a>
+            </li>
+            <li class="nav_listItem">
+              <a href="./contact.html">Contact</a>
+            </li>
+          </div>
+        </ul>
       </div>
-      <ul class="nav_list">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <div class="nav_list--Menu">
-          <li class="nav_listItem"><a href="../index.html">Home</a></li>
-          <li class="nav_listItem menu--item">
-            <a href="#southafrican-food">Countries Food</a>
-            <div class="dropdown-options">
-              <a href="../pages/nigeria.html">Nigeria</a>
-              <a href="../pages/ethiopia.html">Ethiopia</a>
-              <a href="#">South Africa</a>
-              <a href="../pages/egypt.html">Egypt</a>
-              <a href="../pages/drcongo.html">Dr.Congo</a>
-
-              <!-- <a href="#">Logout</a> -->
-            </div>
-          </li>
-          <li class="nav_listItem"><a href="../pages/about.html">About</a></li>
-          <li class="nav_listItem"><a href="../pages/contact.html">Contact</a></li>
-         
-        </div>
-      </ul>
-    </div>
-  </nav>
-  <main class="main">
-    <section class="food" id="southafrican-food">
-      <div class="food_wrapper">
-        <h2 class="subTitle">Food</h2>
-        <div class="min_wrapper">
-          <!-- Dr. Congo food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/amalaEwedoSoup_nigeria.webp"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">AmalaEwedoSoup</h3>
-              <p class="food-description">
-                Yam flour is cooked until it forms a smooth, fluffy side dish
-                that can be served with a variety of soups, such as the
-                flavorful Ewudu.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fried-Ripe-Plantains-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Fried Ripe</h3>
-              <p class="food-description">
-                Fried plantains are a big part of Caribbean, Asian and African
-                cuisine. In Yoruba, it’s called Dodo and it’s served with
-                everything from Jollof rice to savory stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Nigerian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fufu-1-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Jollof Rice</h3>
-              <p class="food-name">
-                n Central and Western Africa, fufu is any variety of starchy
-                food that has been mashed and shaped into balls and eaten as a
-                staple. Fufu can be made with yam, cassava or other ground
-                provisions. Served it with soup, stew, or sauce. So satisfying
-                and delicious!
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Iyan-Pounded-Yam-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Iyan Pounded</h3>
-              <p class="food-name">
-                If you like mashed potatoes, you’re sure to enjoy pounded yam.
-                This tasty staple is super filling and can be served with
-                traditional African soups and stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Ethiopian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Garri-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Garri</h3>
-              <p class="food-name">
-                Looking for something new and wholesome to add to your
-                breakfast menu? Garri is a Nigerian cereal made with cassava
-                and milk. Toppings like nuts and berries make this dish even
-                tastier.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Grilled-Plantain-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Boli</h3>
-              <p class="food-name">
-                This popular Nigerian street food features sweet ripe
-                plantains coated in olive oil, delicately seasoned and grilled
-                to perfection.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Egyptian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Eba-Cassava-Meal-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Eba Cassava</h3>
-              <p class="food-name">
-                Eba food is a traditional staple made from cassava. It can be
-                paired with other tasty Nigerian dishes such as Okro soup or
-                meat stew.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nkwobi-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nkwobi</h3>
-              <p class="food-name">
-                In eastern Nigeria, Nkwobi is served in popular restaurants
-                and is considered a delicacy. This spicy dish is made with cow
-                foot, which is seasoned and pressure cooked until tender.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- South African food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Chicken-Empanadas-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Bobotie</h3>
-              <p class="food-name">
-                If you’re a fan of Mexican empanadas, expand your palate by
-                trying the Nigerian meat pie. Ground beef is seasoned and
-                cooked with diced potatoes and carrots, then stuffed inside a
-                flaky, savory pastry.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nigerian-Buns-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nigerian Buns</h3>
-              <p class="food-name">
-                These sweet buns are beyond tasty and are ready in only 15
-                minutes. You’re sure to love the sweet, crunchy texture and
-                rich vanilla flavor.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="min_wrapper">
-          <!-- Dr. Congo food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/amalaEwedoSoup_nigeria.webp"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">AmalaEwedoSoup</h3>
-              <p class="food-description">
-                Yam flour is cooked until it forms a smooth, fluffy side dish
-                that can be served with a variety of soups, such as the
-                flavorful Ewudu.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fried-Ripe-Plantains-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Fried Ripe</h3>
-              <p class="food-description">
-                Fried plantains are a big part of Caribbean, Asian and African
-                cuisine. In Yoruba, it’s called Dodo and it’s served with
-                everything from Jollof rice to savory stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Nigerian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Fufu-1-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Jollof Rice</h3>
-              <p class="food-name">
-                n Central and Western Africa, fufu is any variety of starchy
-                food that has been mashed and shaped into balls and eaten as a
-                staple. Fufu can be made with yam, cassava or other ground
-                provisions. Served it with soup, stew, or sauce. So satisfying
-                and delicious!
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Iyan-Pounded-Yam-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Iyan Pounded</h3>
-              <p class="food-name">
-                If you like mashed potatoes, you’re sure to enjoy pounded yam.
-                This tasty staple is super filling and can be served with
-                traditional African soups and stews.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Ethiopian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Garri-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Garri</h3>
-              <p class="food-name">
-                Looking for something new and wholesome to add to your
-                breakfast menu? Garri is a Nigerian cereal made with cassava
-                and milk. Toppings like nuts and berries make this dish even
-                tastier.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Grilled-Plantain-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Boli</h3>
-              <p class="food-name">
-                This popular Nigerian street food features sweet ripe
-                plantains coated in olive oil, delicately seasoned and grilled
-                to perfection.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- Egyptian food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Eba-Cassava-Meal-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Eba Cassava</h3>
-              <p class="food-name">
-                Eba food is a traditional staple made from cassava. It can be
-                paired with other tasty Nigerian dishes such as Okro soup or
-                meat stew.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nkwobi-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nkwobi</h3>
-              <p class="food-name">
-                In eastern Nigeria, Nkwobi is served in popular restaurants
-                and is considered a delicacy. This spicy dish is made with cow
-                foot, which is seasoned and pressure cooked until tender.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <!-- South African food -->
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Chicken-Empanadas-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Bobotie</h3>
-              <p class="food-name">
-                If you’re a fan of Mexican empanadas, expand your palate by
-                trying the Nigerian meat pie. Ground beef is seasoned and
-                cooked with diced potatoes and carrots, then stuffed inside a
-                flaky, savory pastry.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-          <div class="min_wrapper-box">
-            <img
-              src="../Assets/food/Nigeria/Nigerian-Buns-683x1024.jpg"
-              alt=""
-              class="food-img"
-            />
-
-            <div>
-              <h3 class="food-name">Nigerian Buns</h3>
-              <p class="food-name">
-                These sweet buns are beyond tasty and are ready in only 15
-                minutes. You’re sure to love the sweet, crunchy texture and
-                rich vanilla flavor.
-              </p>
-              <a href="" class="readMore">read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="navigate_wrapper">
-          <a href="#" class="navigate next">1</a>
-          <a href="#" class="navigate prev">2</a>
-        </div>
-      </div>
-    </section>
-  </main>
-    <footer>
-        <div class="footer_wrapper">
-          <div class="footer__logo">
-            <img src="../Assets/logo.jpg" alt="" class="logo" />
-            <p>Come and get African Foods</p>
-            <form class="subscribe">
-              <input
-                type="email"
-                required
-                id="email"
-                placeholder="Enter your eamil"
+    </nav>
+    <main class="main">
+      <section class="hero_section">
+        <h1 class="hero_title">South African Recipies</h1>
+      </section>
+      <section class="food" id="southafrican-food">
+        <div class="food_wrapper">
+          <h2 class="subTitle">Cultural Recipies</h2>
+          <div class="min_wrapper">
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-potjiekos.jpg.webp"
+                alt="potjiekos southafrican-food"
+                class="food-img"
               />
-  
-              <button type="submit" class="btn btn-login">Subscribe</button>
-            </form>
-          </div>
-  
-          <div class="locations">
-            <h3 class="footer--title">Location</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="../pages/nigeria.html" class="countries">Nigeria</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/ethiopia.html" class="countries">Ethiopia</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="#" class="countries">South Africa</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/egypt.html" class="countries">Egypt</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/drcongo.html" class="countries">Dr. Congo</a>
-              </li>
-            </ul>
-          </div>
-          <div class="quickLinks">
-            <h3 class="footer--title">Links</h3>
-            <ul class="footer--list">
-              <li class="footer--listItems">
-                <a href="../index.html" class="quickLinks--link">Home</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/about.html" class="quickLinks--link">About</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../index.html#countiers-food" class="quickLinks--link">Menu</a>
-              </li>
-              <li class="footer--listItems">
-                <a href="../pages/contact.html" class="quickLinks--link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="social">
-            <h3 class="footer--title">Contact Us</h3>
-            <ul class="socialIcons">
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/instagram logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/facebook logo.png"
-                    alt=""
-                /></a>
-              </li>
-              <li class="socialIcons__items">
-                <a href="" class="social"
-                  ><img
-                    class="social_image"
-                    src="../Assets/twitter logo.png"
-                    alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
 
+              <div>
+                <h3 class="food-name">Potjiekos</h3>
+                <p class="food-description">
+                  It means “small pot food” and refers
+                  to a traditional South African dish cooked in a round
+                  cast-iron cauldron called a potjie. Used outdoors and fueled
+                  by a wood or charcoal fire, the potjie is descended from the
+                  Dutch oven and is a common apparatus found in many homes and
+                  villages throughout the country.
+                </p>
+                <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>
+              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-frikkadel.jpg.webp"
+                alt="Frikkadel southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Frikkadel</h3>
+                <p class="food-description">
+                  To make frikkadel, ground beef is mixed with onions, eggs,
+                  garlic, salt, black pepper, butter, herbs, and spices. That
+                  sounds like any typical recipe but what makes South Africa’s
+                  version unique is its use of soaked white bread as a binder.
+                 
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-monkey-gland-sauce.jpg.webp"
+                alt="Monkey gland sauce southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Monkey gland sauce</h3>
+                <p class="food-description">
+                  It
+                  refers to a sweet and tangy sauce typically served as a
+                  topping for grilled steaks and burgers. Recipes vary but it’s
+                  typically made with chutney and tomato sauce along with other
+                  ingredients like onions, garlic, vinegar, soy sauce, ketchup,
+                  mustard, and Worcestershire sauce.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-biltong.jpg.webp"
+                alt="Biltong southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Biltong</h3>
+                <p class="food-description">
+                  It refers to a type of dried cured meat popular in South
+                  Africa, Zimbabwe, Malawi, Botswana, Namibia, and Zambia. Cut
+                  into flat pieces or strips, it can be made with different
+                  types of meat like beef, chicken, fish, ostrich, and wild game
+                  meats like kudu or springbok.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-roosterkoek.jpg.webp"
+                alt="roosterkoek southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Roosterkoek</h3>
+                <p class="food-description">
+                  Roosterbrood or roosterkoek refers to a type of grilled bread
+                  made with flour, yeast, salt, sugar, and water. Like the meats
+                  at a braai, they’re cooked directly on the grill over a wood
+                  or charcoal fire.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-boerewors.jpg.webp"
+                alt="Boerewors southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Boerewors</h3>
+                <p class="food-description">
+                  Boerewors is made with coarsely minced beef and a host of
+                  different spices like coriander seed, nutmeg, cloves,
+                  allspice, and black pepper. The beef can be mixed with minced
+                  pork and/or lamb but authentic boerewors must always contain
+                  beef.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-amanqina.jpg.webp"
+                alt="Amanqina southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Amanqina Enkuku</h3>
+                <p class="food-description">
+                  To make amanqina, chicken feet are boiled in water to remove
+                  the outer layer of skin. They’re then seasoned with various
+                  spices like curry powder, turmeric, salt, and black pepper
+                  before being stewed, fried, or barbecued. When ready, they’re
+                  often enjoyed as a snack with pap.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-denningvleis.jpg.webp"
+                alt="Denningvleis southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Denningvleis</h3>
+                <p class="food-description">
+                  It refers to a South African stew made with meat simmered with
+                  onions, garlic, tamarind paste, and different spices like
+                  cloves, allspice, and bay leaves. A Cape Malay dish, its name
+                  stems from the Javanese word dendeng, which refers to water
+                  buffalo meat. But in South Africa, lamb or mutton is typically
+                  used..
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-biltong.jpg.webp"
+                alt="Biryani southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Biryani</h3>
+                <p class="food-description">
+                  It is another example of the Indian influence on South African
+                  cuisine. It refers to a popular dish of Indian origin made
+                  with meat (usually lamb or chicken) layered with basmati rice,
+                  potatoes, and lentils seasoned with a host of herbs and spices
+                  like saffron, cinnamon, cardamom, cloves, cumin, turmeric,
+                  mint, and coriander.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+          </div>
+          <div class="min_wrapper">
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-hoenderpastei.jpg.webp"
+                alt="Hoenderpastei southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Hoenderpastei</h3>
+                <p class="food-description">
+                  Also known as boer chicken pie refers to a type of chicken pot
+                  pie popular in South Africa. It’s made with chicken layered
+                  with vegetables, hard-boiled eggs, and ham seasoned with lemon
+                  juice, bay leaves, pepper, and salt. The dish is topped with
+                  shortcrust pastry and then baked in an oven till golden brown
+                  and crispy.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-bobotie.jpg.webp"
+                alt="Bobotie southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Bobotie</h3>
+                <p class="food-description">
+                  To make bobotie, ground beef or lamb is cooked with onions,
+                  grated apple, raisins, milk-soaked bread, and egg. The mixture
+                  is seasoned with lemon juice, Worcestershire sauce, and
+                  various spices like turmeric, cumin, coriander, and curry
+                  powder. The mixture is pressed into a casserole dish and then
+                  topped with milk and egg before baking.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-pap.jpg.webp"
+                alt="pap southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Pap</h3>
+                <p class="food-description">
+                  It refers to a type of fluffy porridge made from maize meal
+                  (coarsely ground maize). Depending on how it’s cooked, it can
+                  be runny, soft, or stiff. Pap with a smoother consistency is
+                  called slap pap or soft porridge while thicker pap is known as
+                  stywe pap. A crumblier version of pap called phuthu pap (or
+                  uputhu, krummel) is also common.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-samp-and-beans.jpg.webp"
+                alt="Umngqusho southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Umngqusho</h3>
+                <p class="food-description">
+                  Umngqusho is a popular dish made with samp and beans. Samp
+                  refers to a staple food made with dried, pounded, and chopped
+                  corn kernels. It’s similar to mealie meal except it isn’t as
+                  finely ground.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-bunny-chow.jpg.webp"
+                alt="Bunny southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Bunny Chow</h3>
+                <p class="food-description">
+                  Bunny chow, or bunny for short, is a popular street food dish
+                  that originated from the Indian community of Durban. Also
+                  known as kota or scambane, it consists of a hollowed out loaf
+                  of soft white bread filled with mutton curry.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/vetkoek_SA.jpg"
+                alt="Vetkoek southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Vetkoek</h3>
+                <p class="food-description">
+                  Like bunny chow, vetkoek is a popular street food in South
+                  Africa. It literally means “fat cake” in Afrikaans and refers
+                  to a deep-fried ball of dough that’s similar to a doughnut but
+                  without the hole.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+
+            <div class="min_wrapper-box">
+              <img
+                src="../Assets/food/SA/south-african-food-melktert.jpg.webp"
+                alt="Melktert southafrican-food"
+                class="food-img"
+              />
+
+              <div>
+                <h3 class="food-name">Melktert</h3>
+                <p class="food-description">
+                  Meaning “milk tart” in Afrikaans, melktert refers to a classic
+                  South African custard dessert made with milk, flour, sugar,
+                  and eggs. Topped with a sweet pastry crust and often dusted
+                  with powdered cinnamon, it’s similar to a Portuguese egg tart
+                  except its lighter and with a more pronounced milky flavor.
+                </p>
+ <a href="https://www.willflyforfood.net/south-african-food/" class="readMore">read more</a>              </div>
+            </div>
+          </div>
+          <div class="navigate_wrapper">
+            <a href="#southafrican-food" class="navigate next active">1</a>
+            <a href="#southafrican-food" class="navigate prev active">2</a>
+          </div>
         </div>
-        
-        <div class="copy">
-          <p>
-            Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
-            Rights Reserved.
-          </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer__logo">
+          <img src="../Assets/logo.jpg" alt="" class="logo" />
+          <p>Come and get African Foods</p>
+          <form class="subscribe">
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="Enter your eamil"
+            />
+
+            <button type="submit" class="btn btn-login">Subscribe</button>
+          </form>
         </div>
-      </footer>
-</body>
+
+        <div class="locations">
+          <h3 class="footer--title">Location</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="../pages/nigeria.html" class="countries">Nigeria</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/ethiopia.html" class="countries">Ethiopia</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="#" class="countries">South Africa</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/egypt.html" class="countries">Egypt</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/drcongo.html" class="countries">Dr. Congo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quickLinks">
+          <h3 class="footer--title">Links</h3>
+          <ul class="footer--list">
+            <li class="footer--listItems">
+              <a href="../index.html" class="quickLinks--link">Home</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/about.html" class="quickLinks--link">About</a>
+            </li>
+            <li class="footer--listItems">
+              <a href="../index.html#countiers-food" class="quickLinks--link"
+                >Menu</a
+              >
+            </li>
+            <li class="footer--listItems">
+              <a href="../pages/contact.html" class="quickLinks--link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3 class="footer--title">Contact Us</h3>
+          <ul class="socialIcons">
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/instagram logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/facebook logo.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="socialIcons__items">
+              <a href="" class="social"
+                ><img
+                  class="social_image"
+                  src="../Assets/twitter logo.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>
+          Copyright © 2023 <a href="../HTML/index.html">AFRIFOOD</a>.&nbsp; All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
