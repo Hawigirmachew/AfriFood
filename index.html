@@ -20,13 +20,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- Swiper JS -->
 
-    <!-- JS -->
-    <!-- <script src="./JS/data/food.js" defer></script> -->
-    <script src="./JS/swiper-bundle.min.js" defer></script>
+
+    <!-- scroll window js -->
     <script src="./JS/index.js" defer></script>
-
+    
     <title>AFRIFOOD</title>
   </head>
 
@@ -144,7 +142,7 @@
             <div class="min_wrapper-box">
               <img
                 src="./Assets/food/Dr. Congo/Kwanga-congo.webp"
-                alt=""
+                alt="Dr. Congo food"
                 class="food-img"
               />
 
@@ -156,7 +154,7 @@
             <div class="min_wrapper-box">
               <img
                 src="./Assets/food/Dr. Congo/chicken-moambe-congo.webp"
-                alt=""
+                alt="Dr. Congo food"
                 class="food-img"
               />
 
@@ -170,7 +168,7 @@
             <div class="min_wrapper-box">
               <img
                 src="./Assets/food/Nigeria/Jollof-Rice_nigeria.jpg"
-                alt=""
+                alt="Nigerian food"
                 class="food-img"
               />
 
@@ -182,13 +180,13 @@
             </div>
             <div class="min_wrapper-box">
               <img
-                src="./Assets/food/Nigeria/Suya_nigeria.jpg"
-                alt=""
+                src="./Assets/food/Nigeria/Garri-683x1024.jpg"
+                alt="Nigerian food"
                 class="food-img"
               />
 
               <div>
-                <h4 class="food-name">Suya</h4>
+                <h4 class="food-name">Garri</h4>
                 <a href="./pages/nigeria.html" class="goto">Nigerian Recipies</a>
               </div>
             </div>
@@ -196,7 +194,7 @@
             <div class="min_wrapper-box">
               <img
                 src="../Assets/food/Ethiopia/Beyayenetu.jpg"
-                alt=""
+                alt="Ethioapin food"
                 class="food-img"
               />
 
@@ -442,59 +440,34 @@
               <a href="#" class="quickLinks--link">Home</a>
             </li>
             <li class="footer--listItems">
-              <a href="./about.html" class="quickLinks--link">About</a>
+              <a href="./pages/about.html" class="quickLinks--link">About</a>
             </li>
             <li class="footer--listItems">
-              <a href="./food.html" class="quickLinks--link">Menu</a>
+              <a href="#countries-food" class="quickLinks--link">Countries Food</a>
             </li>
             <li class="footer--listItems">
-              <a href="./contact.html" class="quickLinks--link">Contact</a>
+              <a href="./pages/contact.html" class="quickLinks--link">Contact</a>
             </li>
           </ul>
         </div>
         <div class="social">
           <h4 class="footer--title">Contact Us</h4>
           <ul class="socialIcons">
-            <li class="socialIcons__items">
-              <a href="" class="social"
-                ><img
-                  class="social_image"
-                  src="../Assets/instagram logo.png"
-                  alt=""
-              /></a>
+            <li class="socialIcons__list">
+              <a href="" class="social-btn"
+                ><i class="fa fa-facebook "></i></a>
             </li>
             <li class="socialIcons__items">
-              <a href="" class="social"
-                ><img
-                  class="social_image"
-                  src="../Assets/facebook logo.png"
-                  alt=""
-              /></a>
+              <a href="" class="social-btn"
+                ><i class="fa fa-twitter"></i></a>
             </li>
             <li class="socialIcons__items">
-              <a href="" class="social"
-                ><img
-                  class="social_image"
-                  src="../Assets/twitter logo.png"
-                  alt=""
-              /></a>
+              <a href="" class="social-btn"
+                ><i class="fa fa-instagram"></i></a>
             </li>
           </ul>
         </div>
-        <!-- <div class="campany">
-          <h3 class="footer--title">Campany</h3>
-          <ul class="footer--list">
-            <li class="footer--listItems">
-              <a href="" class="tos">Terms and Conditions</a>
-            </li>
-            <li class="footer--listItems">
-              <a href="" class="tos">Privacy Policy</a>
-            </li>
-            <li class="footer--listItems">
-              <a href="" class="tos">Cookie Policy</a>
-            </li>
-          </ul>
-        </div> -->
+
       </div>
 
       <div class="copy">
@@ -504,5 +477,92 @@
         </p>
       </div>
     </footer>
+    <div class="scroll-btn">
+      <button id="scroll-top-btn">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </button>
+    </div>
+    <script src="./JS/swiper-bundle.min.js"></script>
+
+    <script>
+      // declaration
+window.addEventListener("load", typeWriter);
+
+let i = 0;
+const text = "African food is not a cuisine, it's a cultural adventure";
+let speed = 100;
+
+function typeWriter() {
+  console.log(text);
+  if (i < text.length) {
+    document.getElementById("banner--qoute").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+const foodSlide = document.querySelectorAll('.slide')
+const nxtBtn = document.querySelector('.swiper-button-next')
+const prevBtn = document.querySelector('.swiper-button-prev')
+let current = 0;
+
+function reset(){
+  for(let i = 0; i < foodSlide.length; i++ ){
+    foodSlide[i].style.display = 'none'
+  }
+}
+
+function nextSlide(){
+  console.log('go next')
+  if(current === foodSlide.length - 1){
+    current = -1
+  }
+  reset()
+  foodSlide[current + 1].style.display = 'flex'
+  current++;
+}
+
+
+nxtBtn.addEventListener('click', function(){
+ 
+  nextSlide()
+  
+})
+function prevSlide(){
+  reset()
+  foodSlide[current - 1].style.display = 'flex'
+  current--;
+}
+
+
+prevBtn.addEventListener('click', function(){
+  if(current === 0){
+    current = foodSlide.length
+  }
+  prevSlide()
+
+})
+
+function init(){
+  reset()
+  // setInterval(nextSlide, 3000)
+  foodSlide[0].style.display = 'flex'
+  
+}
+
+init()
+let swiper2 = new Swiper(".testimonySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+    </script>
   </body>
 </html>

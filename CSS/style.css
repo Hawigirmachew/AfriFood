@@ -53,6 +53,27 @@ a {
 ::-webkit-scrollbar-thumb {
   background: var(--black-color);
 }
+/* scroll top button */
+#scroll-top-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--shadedpink-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
+  cursor: pointer;
+  transition: all 0.5s;
+
+}
+.bxs-arrow-to-top{
+  font-size: var(--xxsfont-size);
+}
 /* common for all */
 .btn {
   border: none;
@@ -62,6 +83,7 @@ a {
 }
 .btn-color {
   background: var(--shadedpink-color);
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
 }
 /* main design begins */
 .main {
@@ -198,7 +220,7 @@ a {
   box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.41);
 }
 .food-name {
-  font-family: var( --font-family-poppins);
+  font-family: var(--font-family-poppins);
   font-size: var(--mdfont-size);
   margin-bottom: 0.3rem;
 }

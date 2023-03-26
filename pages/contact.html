@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/nav.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
 
     <link rel="stylesheet" href="../CSS/contact.css" />
     <link rel="stylesheet" href="../CSS/footer.css" />
-    <!-- JS -->
-    <!-- <script src="../JS/contact.js" defer></script> -->
+   <!-- Font Awesome Icon Library -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+ />
+ <!-- scroll window js -->
+<script src="../JS/index.js" defer></script>
     <title>Contact Us</title>
   </head>
   <body>
@@ -34,7 +39,6 @@
                 <a href="./southafrican.html">South Africa</a>
                 <a href="./egypt.html">Egypt</a>
                 <a href="./drcongo.html">Dr.Congo</a>
-
               </div>
             </li>
             <li class="nav_listItem"><a href="./about.html">About</a></li>
@@ -49,10 +53,9 @@
           <div class="send--message">
             <h2>Send Message</h2>
             <form
-              action="https://formsubmit.co/hawigirmachew@gmail.com"
+              action="https://formsubmit.co/4396b8d8ff36c632a62e0b7304eb0503 "
               method="POST"
               id="contact-form"
-              
               class="contact-form"
             >
               <div class="input-row">
@@ -62,7 +65,6 @@
                   class="conatctForm-input"
                   placeholder="Name"
                   required
-                 
                 />
                 <span class="error">Please enter your name</span>
               </div>
@@ -99,6 +101,7 @@
               <input
                 type="hidden"
                 name="_next"
+                id="hidden"
                 value="https://lovely-daifuku-86bab5.netlify.app/pages/thankyou.html"
               />
               <input type="hidden" name="_captcha" value="false" />
@@ -114,31 +117,19 @@
             <div class="address">
               <ul class="addressIcons">
                 <li class="addressIcons__items">
-                  <a href="" class="address"
-                    ><img
-                      class="address_image"
-                      src="../Assets/instagram logo.png"
-                      alt=""
-                  /></a>
-                  instagram.com
-                </li>
-                <li class="addressIcons__items">
-                  <a href="" class="address"
-                    ><img
-                      class="address_image"
-                      src="../Assets/facebook logo.png"
-                      alt=""
-                  /></a>
+                  <a href="" class="address-link"
+                    ><i class="fa fa-facebook"></i></a>
                   facebook.com
                 </li>
                 <li class="addressIcons__items">
-                  <a href="" class="address"
-                    ><img
-                      class="address_image"
-                      src="../Assets/twitter logo.png"
-                      alt=""
-                  /></a>
+                  <a href="" class="address-link"
+                    ><i class="fa fa-twitter"></i></a>
                   twitter.com
+                </li>
+                <li class="addressIcons__items">
+                  <a href="" class="address-link"
+                    ><i class="fa fa-instagram"></i></a>
+                  instagram.com
                 </li>
               </ul>
             </div>
@@ -159,7 +150,7 @@
               placeholder="Enter your eamil"
             />
 
-            <button type="submit" class="btn btn-login">Subscribe</button>
+            <button type="submit" class="btn btn-color">Subscribe</button>
           </form>
         </div>
 
@@ -201,31 +192,19 @@
           </ul>
         </div>
         <div class="social">
-          <h3 class="footer--title">Contact Us</h3>
+          <h4 class="footer--title">Contact Us</h4>
           <ul class="socialIcons">
-            <li class="socialIcons__items">
-              <a href="" class="social"
-                ><img
-                  class="social_image"
-                  src="../Assets/instagram logo.png"
-                  alt=""
-              /></a>
+            <li class="socialIcons__list">
+              <a href="" class="social-btn"
+                ><i class="fa fa-facebook "></i></a>
             </li>
             <li class="socialIcons__items">
-              <a href="" class="social"
-                ><img
-                  class="social_image"
-                  src="../Assets/facebook logo.png"
-                  alt=""
-              /></a>
+              <a href="" class="social-btn"
+                ><i class="fa fa-twitter"></i></a>
             </li>
             <li class="socialIcons__items">
-              <a href="" class="social"
-                ><img
-                  class="social_image"
-                  src="../Assets/twitter logo.png"
-                  alt=""
-              /></a>
+              <a href="" class="social-btn"
+                ><i class="fa fa-instagram"></i></a>
             </li>
           </ul>
         </div>
@@ -238,5 +217,10 @@
         </p>
       </div>
     </footer>
+    <div class="scroll-btn">
+      <button id="scroll-top-btn">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </button>
+    </div>
   </body>
 </html>

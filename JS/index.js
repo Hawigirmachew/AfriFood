@@ -1,77 +1,38 @@
-// declaration
-window.addEventListener("load", typeWriter);
+const scrollToTop = document.querySelector('#scroll-top-btn');
 
-let i = 0;
-const text = "African food is not a cuisine, it's a cultural adventure";
-let speed = 100;
+// Set up a function if the window scroll down to height 500px then show button 
+window.addEventListener("scroll", () => {
 
-function typeWriter() {
-  console.log(text);
-  if (i < text.length) {
-    document.getElementById("banner--qoute").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-const foodSlide = document.querySelectorAll('.slide')
-const nxtBtn = document.querySelector('.swiper-button-next')
-const prevBtn = document.querySelector('.swiper-button-prev')
-let current = 0;
-
-function reset(){
-  for(let i = 0; i < foodSlide.length; i++ ){
-    foodSlide[i].style.display = 'none'
-  }
-}
-
-function nextSlide(){
-  console.log('go next')
-  if(current === foodSlide.length - 1){
-    current = -1
-  }
-  reset()
-  foodSlide[current + 1].style.display = 'flex'
-  current++;
-}
-
-
-nxtBtn.addEventListener('click', function(){
- 
-  nextSlide()
-  
-})
-function prevSlide(){
-  reset()
-  foodSlide[current - 1].style.display = 'flex'
-  current--;
-}
-
-
-prevBtn.addEventListener('click', function(){
-  if(current === 0){
-    current = foodSlide.length
-  }
-  prevSlide()
-
-})
-
-function init(){
-  reset()
-  // setInterval(nextSlide, 3000)
-  foodSlide[0].style.display = 'flex'
-  
-}
-
-init()
-let swiper2 = new Swiper(".testimonySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+    // Get the current scroll height value
+    const windowHeight = window.scrollY;
+    // console.log(windowHeight)
+    // If the scroll height value is greater than the window height, add style block-css in button 
+    if (windowHeight > 500) {
+        scrollToTop.style.display = 'block';
+    } else {
+        scrollToTop.style.display = 'none';
+    }
 });
+
+
+// Setup a function with animate scroll to top slower / smoother
+const animateScroll = () => {
+
+    // Set a variable for the number of pixels from the top of the document.
+    const heightScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    // If heightScroll value is greater than 0, scroll to top of the document.
+   
+    if (heightScroll > 0) {
+      console.log(heightScroll)
+        // ScrollTo takes x and y coordinate.
+        // Scroll to the top of the page
+        window.scrollTo(0, heightScroll - heightScroll);
+    }
+    
+}
+
+// When the button clicked, run animateScroll function
+scrollToTop.onclick = function () {
+    animateScroll();
+}
